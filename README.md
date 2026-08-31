@@ -1,4 +1,5 @@
-# 2026_MAPK
+# 2026 MAPK Submission Analysis
+
 All code used for MAPK submission analysis and figures
 
 Three notebooks reproduce every figure and the library they were screened with. 
