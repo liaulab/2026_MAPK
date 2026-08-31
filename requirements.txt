@@ -1,0 +1,32 @@
+# Runtime dependencies for MAPK_Master_Analysis.ipynb.
+#
+# Installed by the notebook's first cell, so a fresh Google Colab runtime is
+# provisioned from scratch on every run and no persistent environment is
+# needed. Lower bounds only, except where a specific behaviour is required.
+
+# Core numerical and plotting stack.
+numpy>=1.26
+pandas>=2.0
+scipy>=1.11
+matplotlib>=3.8
+seaborn>=0.13
+
+# GMM clustering, PCA.
+scikit-learn>=1.3
+
+# Read TableS1-ScreenData.xlsx.
+openpyxl>=3.1
+
+# mmCIF structure parsing for the pocket-distance calculations.
+biopython>=1.81
+
+# Required by be_scan.figure_plot at import time.
+biopandas>=0.5
+statsmodels>=0.14
+
+# Interactive Sankey, plus static SVG export of it.
+plotly>=5.24
+kaleido>=0.2.1
+
+# Figure plotting primitives. Installed from git; be_scan is not on PyPI.
+be_scan @ git+https://github.com/liaulab/be-scan.git
