@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Per-gene boxplots</title>
+<title>Boxplots</title>
 <link rel="stylesheet" href="assets/style.css">
 <script>(function(){try{var t=localStorage.getItem('mapk-theme');if(t==='light'||t==='dark'){document.documentElement.dataset.theme=t;}}catch(e){}})();</script>
 </head>
@@ -13,7 +13,7 @@
     <div class="masthead">
       <div>
         <h1><a href="index.html" style="text-decoration:none;color:inherit">MAPK base-editing screens</a></h1>
-        <p class="lede">Per-gene boxplots</p>
+        <p class="lede">Boxplots</p>
       </div>
       <button id="theme" class="theme" type="button" hidden
               aria-label="Switch between automatic, light and dark appearance">Theme</button>
@@ -21,9 +21,9 @@
   </div>
 </header>
 <main>
-  <nav class="crumbs"><a href="index.html">Overview</a> &rsaquo; Per-gene boxplots</nav>
-  <h2>Per-gene boxplots</h2>
-  <p class="lede">Z-score distribution of every guide targeting each gene, one panel per screen, editor and condition, with the non-targeting and essential-splice-site controls on the same axis. The last panel brackets the two-sided Mann-Whitney U test of controls against essential guides, within each editor.</p>
+  <nav class="crumbs"><a href="index.html">Overview</a> &rsaquo; Boxplots</nav>
+  <h2>Boxplots</h2>
+  <p class="lede">Z-score distribution of every guide targeting each gene per screen per editor and condition.</p>
   <div class="filter">
     <input id="filter" type="search" placeholder="Filter by screen or figure name"
            aria-label="Filter figures">
@@ -583,9 +583,7 @@
     <p>Interactive companion to the MAPK base-editing screen manuscript.
        Figures generated with <a href="https://github.com/liaulab/be-scan">be_scan</a>
        and Plotly. Built 2026-08-31.</p>
-    <p>Every figure is also available as a print-ready SVG in the repository
-       under <code>Outputs/</code>. Screen data is in
-       <code>TableS1-ScreenData.xlsx</code>.</p>
+    <p>Screen data is in <code>TableS1-ScreenData.xlsx</code>.</p>
   </div>
 </footer>
 <script>// Theme toggle, cycling auto -> light -> dark. The choice is remembered per
