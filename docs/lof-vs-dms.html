@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hyperactivation versus deep mutational scanning</title>
+<link rel="stylesheet" href="assets/style.css">
+<script>(function(){try{var t=localStorage.getItem('mapk-theme');if(t==='light'||t==='dark'){document.documentElement.dataset.theme=t;}}catch(e){}})();</script>
+</head>
+<body>
+<header class="site">
+  <div class="inner">
+    <div class="masthead">
+      <div>
+        <h1><a href="index.html" style="text-decoration:none;color:inherit">MAPK base-editing screens</a></h1>
+        <p class="lede">Hyperactivation versus deep mutational scanning</p>
+      </div>
+      <button id="theme" class="theme" type="button" hidden
+              aria-label="Switch between automatic, light and dark appearance">Theme</button>
+    </div>
+  </div>
+</header>
+<main>
+  <nav class="crumbs"><a href="index.html">Overview</a> &rsaquo; Hyperactivation versus deep mutational scanning</nav>
+  <h2>Hyperactivation versus deep mutational scanning</h2>
+  <p class="lede">Guides that hyperactivate the pathway, compared against published DMS data for PTPN11, KRAS and MAPK1.</p>
+  <div class="filter">
+    <input id="filter" type="search" placeholder="Filter by figure or figure name"
+           aria-label="Filter figures">
+    <span class="hint">8 figures in 2 groups &middot; figures load when a group is opened</span>
+  </div>
+  <details class="group" open data-search="correlation all genes ptpn11 kras erk2 (lof-erk screen)">
+    <summary><span class="label">Correlation</span><span class="n">4 figures</span></summary>
+    <div class="body">
+      <figure class="figure">
+        <figcaption>
+          <span class="name">All genes</span>
+          
+        </figcaption>
+        <iframe src="figures/lof-vs-dms/all-genes-correlation.html" height="318" loading="lazy"
+                title="All genes"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">PTPN11</span>
+          
+        </figcaption>
+        <iframe src="figures/lof-vs-dms/PTPN11-correlation.html" height="318" loading="lazy"
+                title="PTPN11"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">KRAS</span>
+          
+        </figcaption>
+        <iframe src="figures/lof-vs-dms/KRAS-correlation.html" height="318" loading="lazy"
+                title="KRAS"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">ERK2 (LOF-ERK screen)</span>
+          
+        </figcaption>
+        <iframe src="figures/lof-vs-dms/MAPK1-LOF-ERK-correlation.html" height="318" loading="lazy"
+                title="ERK2 (LOF-ERK screen)"></iframe>
+      </figure>
+    </div>
+  </details>
+  <details class="group" data-search="hit distribution all genes (jitterbox) all genes (kde) erk2 (lof-erk screen) (jitterbox) erk2 (lof-erk screen) (kde)">
+    <summary><span class="label">Hit distribution</span><span class="n">4 figures</span></summary>
+    <div class="body">
+      <figure class="figure">
+        <figcaption>
+          <span class="name">All genes (jitterbox)</span>
+          
+        </figcaption>
+        <iframe src="figures/lof-vs-dms/all-hit-boxplot-jitterbox.html" height="280" loading="lazy"
+                title="All genes (jitterbox)"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">All genes (kde)</span>
+          
+        </figcaption>
+        <iframe src="figures/lof-vs-dms/all-hit-boxplot-kde.html" height="280" loading="lazy"
+                title="All genes (kde)"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">ERK2 (LOF-ERK screen) (jitterbox)</span>
+          
+        </figcaption>
+        <iframe src="figures/lof-vs-dms/MAPK1-hit-boxplot-jitterbox.html" height="280" loading="lazy"
+                title="ERK2 (LOF-ERK screen) (jitterbox)"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">ERK2 (LOF-ERK screen) (kde)</span>
+          
+        </figcaption>
+        <iframe src="figures/lof-vs-dms/MAPK1-hit-boxplot-kde.html" height="280" loading="lazy"
+                title="ERK2 (LOF-ERK screen) (kde)"></iframe>
+      </figure>
+    </div>
+  </details>
+
+</main>
+<footer class="site">
+  <div class="inner">
+    <p>Interactive companion to the MAPK base-editing screen manuscript.
+       Figures generated with <a href="https://github.com/liaulab/be-scan">be_scan</a>
+       and Plotly. Built 2026-08-31.</p>
+    <p>Every figure is also available as a print-ready SVG in the repository
+       under <code>Outputs/</code>. Screen data is in
+       <code>TableS1-ScreenData.xlsx</code>.</p>
+  </div>
+</footer>
+<script>// Theme toggle, cycling auto -> light -> dark. The choice is remembered per
+// browser. Without JS the button stays hidden and the page follows the OS.
+(function () {
+  var button = document.getElementById('theme');
+  if (!button) return;
+  var order = ['auto', 'light', 'dark'];
+
+  function stored() {
+    try { return localStorage.getItem('mapk-theme') || 'auto'; } catch (e) { return 'auto'; }
+  }
+  function apply(mode) {
+    if (mode === 'auto') { delete document.documentElement.dataset.theme; }
+    else { document.documentElement.dataset.theme = mode; }
+    button.textContent = 'Theme: ' + mode;
+    try { localStorage.setItem('mapk-theme', mode); } catch (e) {}
+  }
+
+  button.hidden = false;
+  apply(stored());
+  button.addEventListener('click', function () {
+    apply(order[(order.indexOf(stored()) + 1) % order.length]);
+  });
+})();
+// Filters the group list. Without JS every group is still present and open-able.
+(function () {
+  var box = document.getElementById('filter');
+  if (!box) return;
+  var groups = Array.prototype.slice.call(document.querySelectorAll('details.group'));
+  box.addEventListener('input', function () {
+    var q = box.value.trim().toLowerCase();
+    groups.forEach(function (g) {
+      var hit = !q || g.dataset.search.indexOf(q) !== -1;
+      g.style.display = hit ? '' : 'none';
+      if (q && hit) { g.open = true; }
+    });
+  });
+})();
+</script>
+</body>
+</html>

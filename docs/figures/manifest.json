@@ -1,0 +1,1954 @@
+[
+ {
+  "section": "scatterplots-gof",
+  "group": "SHC1",
+  "title": "GOF \u00b7 all conditions",
+  "caption": "12978 points",
+  "height": 442,
+  "path": "figures/scatterplots-gof/GOF-SHC1.html"
+ },
+ {
+  "section": "scatterplots-gof",
+  "group": "GRB2",
+  "title": "GOF \u00b7 all conditions",
+  "caption": "3576 points",
+  "height": 442,
+  "path": "figures/scatterplots-gof/GOF-GRB2.html"
+ },
+ {
+  "section": "scatterplots-gof",
+  "group": "PTPN11",
+  "title": "GOF \u00b7 all conditions",
+  "caption": "9162 points",
+  "height": 442,
+  "path": "figures/scatterplots-gof/GOF-PTPN11.html"
+ },
+ {
+  "section": "scatterplots-gof",
+  "group": "KRAS",
+  "title": "GOF \u00b7 all conditions",
+  "caption": "2382 points",
+  "height": 442,
+  "path": "figures/scatterplots-gof/GOF-KRAS.html"
+ },
+ {
+  "section": "scatterplots-gof",
+  "group": "NRAS",
+  "title": "GOF \u00b7 all conditions",
+  "caption": "2904 points",
+  "height": 442,
+  "path": "figures/scatterplots-gof/GOF-NRAS.html"
+ },
+ {
+  "section": "scatterplots-gof",
+  "group": "HRAS",
+  "title": "GOF \u00b7 all conditions",
+  "caption": "3804 points",
+  "height": 442,
+  "path": "figures/scatterplots-gof/GOF-HRAS.html"
+ },
+ {
+  "section": "scatterplots-gof",
+  "group": "MRAS",
+  "title": "GOF \u00b7 all conditions",
+  "caption": "3990 points",
+  "height": 442,
+  "path": "figures/scatterplots-gof/GOF-MRAS.html"
+ },
+ {
+  "section": "scatterplots-gof",
+  "group": "PPP1CA",
+  "title": "GOF \u00b7 all conditions",
+  "caption": "6912 points",
+  "height": 442,
+  "path": "figures/scatterplots-gof/GOF-PPP1CA.html"
+ },
+ {
+  "section": "scatterplots-gof",
+  "group": "PPP1CB",
+  "title": "GOF \u00b7 all conditions",
+  "caption": "4578 points",
+  "height": 442,
+  "path": "figures/scatterplots-gof/GOF-PPP1CB.html"
+ },
+ {
+  "section": "scatterplots-gof",
+  "group": "PPP1CC",
+  "title": "GOF \u00b7 all conditions",
+  "caption": "4770 points",
+  "height": 442,
+  "path": "figures/scatterplots-gof/GOF-PPP1CC.html"
+ },
+ {
+  "section": "scatterplots-gof",
+  "group": "SHOC2",
+  "title": "GOF \u00b7 all conditions",
+  "caption": "8292 points",
+  "height": 442,
+  "path": "figures/scatterplots-gof/GOF-SHOC2.html"
+ },
+ {
+  "section": "scatterplots-gof",
+  "group": "ARAF",
+  "title": "GOF \u00b7 all conditions",
+  "caption": "13014 points",
+  "height": 442,
+  "path": "figures/scatterplots-gof/GOF-ARAF.html"
+ },
+ {
+  "section": "scatterplots-gof",
+  "group": "BRAF",
+  "title": "GOF \u00b7 all conditions",
+  "caption": "11742 points",
+  "height": 442,
+  "path": "figures/scatterplots-gof/GOF-BRAF.html"
+ },
+ {
+  "section": "scatterplots-gof",
+  "group": "RAF1",
+  "title": "GOF \u00b7 all conditions",
+  "caption": "10770 points",
+  "height": 442,
+  "path": "figures/scatterplots-gof/GOF-RAF1.html"
+ },
+ {
+  "section": "scatterplots-gof",
+  "group": "KSR1",
+  "title": "GOF \u00b7 all conditions",
+  "caption": "19806 points",
+  "height": 442,
+  "path": "figures/scatterplots-gof/GOF-KSR1.html"
+ },
+ {
+  "section": "scatterplots-gof",
+  "group": "KSR2",
+  "title": "GOF \u00b7 all conditions",
+  "caption": "19092 points",
+  "height": 442,
+  "path": "figures/scatterplots-gof/GOF-KSR2.html"
+ },
+ {
+  "section": "scatterplots-gof",
+  "group": "MAP2K1",
+  "title": "GOF \u00b7 all conditions",
+  "caption": "7236 points",
+  "height": 442,
+  "path": "figures/scatterplots-gof/GOF-MAP2K1.html"
+ },
+ {
+  "section": "scatterplots-gof",
+  "group": "MAP2K2",
+  "title": "GOF \u00b7 all conditions",
+  "caption": "8766 points",
+  "height": 442,
+  "path": "figures/scatterplots-gof/GOF-MAP2K2.html"
+ },
+ {
+  "section": "scatterplots-gof",
+  "group": "DUSP4",
+  "title": "GOF \u00b7 all conditions",
+  "caption": "8976 points",
+  "height": 442,
+  "path": "figures/scatterplots-gof/GOF-DUSP4.html"
+ },
+ {
+  "section": "scatterplots-gof",
+  "group": "DUSP6",
+  "title": "GOF \u00b7 all conditions",
+  "caption": "7380 points",
+  "height": 442,
+  "path": "figures/scatterplots-gof/GOF-DUSP6.html"
+ },
+ {
+  "section": "scatterplots-gof",
+  "group": "MAPK1",
+  "title": "GOF \u00b7 all conditions",
+  "caption": "5826 points",
+  "height": 442,
+  "path": "figures/scatterplots-gof/GOF-MAPK1.html"
+ },
+ {
+  "section": "scatterplots-gof",
+  "group": "MAPK3",
+  "title": "GOF \u00b7 all conditions",
+  "caption": "8058 points",
+  "height": 442,
+  "path": "figures/scatterplots-gof/GOF-MAPK3.html"
+ },
+ {
+  "section": "scatterplots-meki",
+  "group": "ARAF",
+  "title": "MEKi \u00b7 all conditions",
+  "caption": "21610 points",
+  "height": 442,
+  "path": "figures/scatterplots-meki/MEKi-ARAF.html"
+ },
+ {
+  "section": "scatterplots-meki",
+  "group": "BRAF",
+  "title": "MEKi \u00b7 all conditions",
+  "caption": "19410 points",
+  "height": 442,
+  "path": "figures/scatterplots-meki/MEKi-BRAF.html"
+ },
+ {
+  "section": "scatterplots-meki",
+  "group": "RAF1",
+  "title": "MEKi \u00b7 all conditions",
+  "caption": "17830 points",
+  "height": 442,
+  "path": "figures/scatterplots-meki/MEKi-RAF1.html"
+ },
+ {
+  "section": "scatterplots-meki",
+  "group": "KSR1",
+  "title": "MEKi \u00b7 all conditions",
+  "caption": "32870 points",
+  "height": 442,
+  "path": "figures/scatterplots-meki/MEKi-KSR1.html"
+ },
+ {
+  "section": "scatterplots-meki",
+  "group": "KSR2",
+  "title": "MEKi \u00b7 all conditions",
+  "caption": "31760 points",
+  "height": 442,
+  "path": "figures/scatterplots-meki/MEKi-KSR2.html"
+ },
+ {
+  "section": "scatterplots-meki",
+  "group": "MAP2K1",
+  "title": "MEKi \u00b7 all conditions",
+  "caption": "12030 points",
+  "height": 442,
+  "path": "figures/scatterplots-meki/MEKi-MAP2K1.html"
+ },
+ {
+  "section": "scatterplots-meki",
+  "group": "MAP2K2",
+  "title": "MEKi \u00b7 all conditions",
+  "caption": "14490 points",
+  "height": 442,
+  "path": "figures/scatterplots-meki/MEKi-MAP2K2.html"
+ },
+ {
+  "section": "scatterplots-lof",
+  "group": "SHC1",
+  "title": "LOF \u00b7 all conditions",
+  "caption": "4326 points",
+  "height": 442,
+  "path": "figures/scatterplots-lof/LOF-SHC1.html"
+ },
+ {
+  "section": "scatterplots-lof",
+  "group": "GRB2",
+  "title": "LOF \u00b7 all conditions",
+  "caption": "1192 points",
+  "height": 442,
+  "path": "figures/scatterplots-lof/LOF-GRB2.html"
+ },
+ {
+  "section": "scatterplots-lof",
+  "group": "PTPN11",
+  "title": "LOF \u00b7 all conditions",
+  "caption": "3054 points",
+  "height": 442,
+  "path": "figures/scatterplots-lof/LOF-PTPN11.html"
+ },
+ {
+  "section": "scatterplots-lof",
+  "group": "KRAS",
+  "title": "LOF \u00b7 all conditions",
+  "caption": "794 points",
+  "height": 442,
+  "path": "figures/scatterplots-lof/LOF-KRAS.html"
+ },
+ {
+  "section": "scatterplots-lof",
+  "group": "NRAS",
+  "title": "LOF \u00b7 all conditions",
+  "caption": "966 points",
+  "height": 442,
+  "path": "figures/scatterplots-lof/LOF-NRAS.html"
+ },
+ {
+  "section": "scatterplots-lof",
+  "group": "HRAS",
+  "title": "LOF \u00b7 all conditions",
+  "caption": "1269 points",
+  "height": 442,
+  "path": "figures/scatterplots-lof/LOF-HRAS.html"
+ },
+ {
+  "section": "scatterplots-lof",
+  "group": "MRAS",
+  "title": "LOF \u00b7 all conditions",
+  "caption": "1330 points",
+  "height": 442,
+  "path": "figures/scatterplots-lof/LOF-MRAS.html"
+ },
+ {
+  "section": "scatterplots-lof",
+  "group": "PPP1CA",
+  "title": "LOF \u00b7 all conditions",
+  "caption": "2304 points",
+  "height": 442,
+  "path": "figures/scatterplots-lof/LOF-PPP1CA.html"
+ },
+ {
+  "section": "scatterplots-lof",
+  "group": "PPP1CB",
+  "title": "LOF \u00b7 all conditions",
+  "caption": "1525 points",
+  "height": 442,
+  "path": "figures/scatterplots-lof/LOF-PPP1CB.html"
+ },
+ {
+  "section": "scatterplots-lof",
+  "group": "PPP1CC",
+  "title": "LOF \u00b7 all conditions",
+  "caption": "1591 points",
+  "height": 442,
+  "path": "figures/scatterplots-lof/LOF-PPP1CC.html"
+ },
+ {
+  "section": "scatterplots-lof",
+  "group": "SHOC2",
+  "title": "LOF \u00b7 all conditions",
+  "caption": "2764 points",
+  "height": 442,
+  "path": "figures/scatterplots-lof/LOF-SHOC2.html"
+ },
+ {
+  "section": "scatterplots-lof",
+  "group": "ARAF",
+  "title": "LOF \u00b7 all conditions",
+  "caption": "4337 points",
+  "height": 442,
+  "path": "figures/scatterplots-lof/LOF-ARAF.html"
+ },
+ {
+  "section": "scatterplots-lof",
+  "group": "BRAF",
+  "title": "LOF \u00b7 all conditions",
+  "caption": "3911 points",
+  "height": 442,
+  "path": "figures/scatterplots-lof/LOF-BRAF.html"
+ },
+ {
+  "section": "scatterplots-lof",
+  "group": "RAF1",
+  "title": "LOF \u00b7 all conditions",
+  "caption": "3590 points",
+  "height": 442,
+  "path": "figures/scatterplots-lof/LOF-RAF1.html"
+ },
+ {
+  "section": "scatterplots-lof",
+  "group": "KSR1",
+  "title": "LOF \u00b7 all conditions",
+  "caption": "6595 points",
+  "height": 442,
+  "path": "figures/scatterplots-lof/LOF-KSR1.html"
+ },
+ {
+  "section": "scatterplots-lof",
+  "group": "KSR2",
+  "title": "LOF \u00b7 all conditions",
+  "caption": "6361 points",
+  "height": 442,
+  "path": "figures/scatterplots-lof/LOF-KSR2.html"
+ },
+ {
+  "section": "scatterplots-lof",
+  "group": "MAP2K1",
+  "title": "LOF \u00b7 all conditions",
+  "caption": "2415 points",
+  "height": 442,
+  "path": "figures/scatterplots-lof/LOF-MAP2K1.html"
+ },
+ {
+  "section": "scatterplots-lof",
+  "group": "MAP2K2",
+  "title": "LOF \u00b7 all conditions",
+  "caption": "2915 points",
+  "height": 442,
+  "path": "figures/scatterplots-lof/LOF-MAP2K2.html"
+ },
+ {
+  "section": "scatterplots-lof",
+  "group": "DUSP4",
+  "title": "LOF \u00b7 all conditions",
+  "caption": "2993 points",
+  "height": 442,
+  "path": "figures/scatterplots-lof/LOF-DUSP4.html"
+ },
+ {
+  "section": "scatterplots-lof",
+  "group": "DUSP6",
+  "title": "LOF \u00b7 all conditions",
+  "caption": "2459 points",
+  "height": 442,
+  "path": "figures/scatterplots-lof/LOF-DUSP6.html"
+ },
+ {
+  "section": "scatterplots-lof",
+  "group": "MAPK1",
+  "title": "LOF \u00b7 all conditions",
+  "caption": "971 points",
+  "height": 442,
+  "path": "figures/scatterplots-lof/LOF-MAPK1.html"
+ },
+ {
+  "section": "scatterplots-lof",
+  "group": "MAPK3",
+  "title": "LOF \u00b7 all conditions",
+  "caption": "1343 points",
+  "height": 442,
+  "path": "figures/scatterplots-lof/LOF-MAPK3.html"
+ },
+ {
+  "section": "pocket-pdb",
+  "group": "Overview",
+  "title": "Hits by pocket class",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-pdb/Co-crystal-stacked-bar.html"
+ },
+ {
+  "section": "pocket-pdb",
+  "group": "Overview",
+  "title": "Hits including off-node (broken axis)",
+  "caption": "",
+  "height": 272,
+  "path": "figures/pocket-pdb/Co-crystal-broken-bar.html"
+ },
+ {
+  "section": "pocket-pdb",
+  "group": "PTPN11 7JVM",
+  "title": "Distance to ligand",
+  "caption": "Batoprotafib - SHP2i-DMSO-Z",
+  "height": 181,
+  "path": "figures/pocket-pdb/PTPN11-7JVM-distance-histogram.html"
+ },
+ {
+  "section": "pocket-pdb",
+  "group": "PTPN11 7JVM",
+  "title": "Hit scores by pocket class",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-pdb/PTPN11-7JVM-boxplot.html"
+ },
+ {
+  "section": "pocket-pdb",
+  "group": "PTPN11 7JVM",
+  "title": "ABE hit composition",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-pdb/PTPN11-7JVM-ABE-pie.html"
+ },
+ {
+  "section": "pocket-pdb",
+  "group": "PTPN11 7JVM",
+  "title": "CBE hit composition",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-pdb/PTPN11-7JVM-CBE-pie.html"
+ },
+ {
+  "section": "pocket-pdb",
+  "group": "KRAS 6UT0",
+  "title": "Distance to ligand",
+  "caption": "Adagrasib - KRASi-DMSO-Z",
+  "height": 181,
+  "path": "figures/pocket-pdb/KRAS-6UT0-distance-histogram.html"
+ },
+ {
+  "section": "pocket-pdb",
+  "group": "KRAS 6UT0",
+  "title": "Hit scores by pocket class",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-pdb/KRAS-6UT0-boxplot.html"
+ },
+ {
+  "section": "pocket-pdb",
+  "group": "KRAS 6UT0",
+  "title": "ABE hit composition",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-pdb/KRAS-6UT0-ABE-pie.html"
+ },
+ {
+  "section": "pocket-pdb",
+  "group": "KRAS 6UT0",
+  "title": "CBE hit composition",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-pdb/KRAS-6UT0-CBE-pie.html"
+ },
+ {
+  "section": "pocket-pdb",
+  "group": "BRAF 5C9C",
+  "title": "Distance to ligand",
+  "caption": "LY3009120 - RAFi-DMSO-Z",
+  "height": 181,
+  "path": "figures/pocket-pdb/BRAF-5C9C-distance-histogram.html"
+ },
+ {
+  "section": "pocket-pdb",
+  "group": "BRAF 5C9C",
+  "title": "Hit scores by pocket class",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-pdb/BRAF-5C9C-boxplot.html"
+ },
+ {
+  "section": "pocket-pdb",
+  "group": "BRAF 5C9C",
+  "title": "ABE hit composition",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-pdb/BRAF-5C9C-ABE-pie.html"
+ },
+ {
+  "section": "pocket-pdb",
+  "group": "BRAF 5C9C",
+  "title": "CBE hit composition",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-pdb/BRAF-5C9C-CBE-pie.html"
+ },
+ {
+  "section": "pocket-pdb",
+  "group": "MAP2K1 7JUR",
+  "title": "Distance to ligand",
+  "caption": "Trametinib - Trametinib-DMSO-Z",
+  "height": 181,
+  "path": "figures/pocket-pdb/MAP2K1-7JUR-distance-histogram.html"
+ },
+ {
+  "section": "pocket-pdb",
+  "group": "MAP2K1 7JUR",
+  "title": "Hit scores by pocket class",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-pdb/MAP2K1-7JUR-boxplot.html"
+ },
+ {
+  "section": "pocket-pdb",
+  "group": "MAP2K1 7JUR",
+  "title": "ABE hit composition",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-pdb/MAP2K1-7JUR-ABE-pie.html"
+ },
+ {
+  "section": "pocket-pdb",
+  "group": "MAP2K1 7JUR",
+  "title": "CBE hit composition",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-pdb/MAP2K1-7JUR-CBE-pie.html"
+ },
+ {
+  "section": "pocket-pdb",
+  "group": "MAPK1 6RQ4",
+  "title": "Distance to ligand",
+  "caption": "Temuterkib - ERKi-DMSO-Z",
+  "height": 181,
+  "path": "figures/pocket-pdb/MAPK1-6RQ4-distance-histogram.html"
+ },
+ {
+  "section": "pocket-pdb",
+  "group": "MAPK1 6RQ4",
+  "title": "Hit scores by pocket class",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-pdb/MAPK1-6RQ4-boxplot.html"
+ },
+ {
+  "section": "pocket-pdb",
+  "group": "MAPK1 6RQ4",
+  "title": "ABE hit composition",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-pdb/MAPK1-6RQ4-ABE-pie.html"
+ },
+ {
+  "section": "pocket-pdb",
+  "group": "MAPK1 6RQ4",
+  "title": "CBE hit composition",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-pdb/MAPK1-6RQ4-CBE-pie.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "Overview",
+  "title": "Hits by pocket class",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-alphafold/AlphaFold-stacked-bar.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "Overview",
+  "title": "Hits including off-node (broken axis)",
+  "caption": "",
+  "height": 272,
+  "path": "figures/pocket-alphafold/AlphaFold-broken-bar.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "PTPN11 PTPN11-AF",
+  "title": "Distance to ligand",
+  "caption": "Batoprotafib - SHP2i-DMSO-Z",
+  "height": 181,
+  "path": "figures/pocket-alphafold/PTPN11-PTPN11-AF-distance-histogram.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "PTPN11 PTPN11-AF",
+  "title": "Hit scores by pocket class",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-alphafold/PTPN11-PTPN11-AF-boxplot.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "PTPN11 PTPN11-AF",
+  "title": "ABE hit composition",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-alphafold/PTPN11-PTPN11-AF-ABE-pie.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "PTPN11 PTPN11-AF",
+  "title": "CBE hit composition",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-alphafold/PTPN11-PTPN11-AF-CBE-pie.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "KRAS KRAS-AF",
+  "title": "Distance to ligand",
+  "caption": "Adagrasib - KRASi-DMSO-Z",
+  "height": 181,
+  "path": "figures/pocket-alphafold/KRAS-KRAS-AF-distance-histogram.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "KRAS KRAS-AF",
+  "title": "Hit scores by pocket class",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-alphafold/KRAS-KRAS-AF-boxplot.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "KRAS KRAS-AF",
+  "title": "ABE hit composition",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-alphafold/KRAS-KRAS-AF-ABE-pie.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "KRAS KRAS-AF",
+  "title": "CBE hit composition",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-alphafold/KRAS-KRAS-AF-CBE-pie.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "NRAS NRAS-AF",
+  "title": "Distance to ligand",
+  "caption": "Adagrasib - KRASi-DMSO-Z",
+  "height": 181,
+  "path": "figures/pocket-alphafold/NRAS-NRAS-AF-distance-histogram.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "NRAS NRAS-AF",
+  "title": "Hit scores by pocket class",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-alphafold/NRAS-NRAS-AF-boxplot.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "NRAS NRAS-AF",
+  "title": "ABE hit composition",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-alphafold/NRAS-NRAS-AF-ABE-pie.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "NRAS NRAS-AF",
+  "title": "CBE hit composition",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-alphafold/NRAS-NRAS-AF-CBE-pie.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "HRAS HRAS-AF",
+  "title": "Distance to ligand",
+  "caption": "Adagrasib - KRASi-DMSO-Z",
+  "height": 181,
+  "path": "figures/pocket-alphafold/HRAS-HRAS-AF-distance-histogram.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "HRAS HRAS-AF",
+  "title": "Hit scores by pocket class",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-alphafold/HRAS-HRAS-AF-boxplot.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "HRAS HRAS-AF",
+  "title": "ABE hit composition",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-alphafold/HRAS-HRAS-AF-ABE-pie.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "HRAS HRAS-AF",
+  "title": "CBE hit composition",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-alphafold/HRAS-HRAS-AF-CBE-pie.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "MRAS MRAS-AF",
+  "title": "Distance to ligand",
+  "caption": "Adagrasib - KRASi-DMSO-Z",
+  "height": 181,
+  "path": "figures/pocket-alphafold/MRAS-MRAS-AF-distance-histogram.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "MRAS MRAS-AF",
+  "title": "Hit scores by pocket class",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-alphafold/MRAS-MRAS-AF-boxplot.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "MRAS MRAS-AF",
+  "title": "ABE hit composition",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-alphafold/MRAS-MRAS-AF-ABE-pie.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "MRAS MRAS-AF",
+  "title": "CBE hit composition",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-alphafold/MRAS-MRAS-AF-CBE-pie.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "ARAF ARAF-AF",
+  "title": "Distance to ligand",
+  "caption": "LY3009120 - RAFi-DMSO-Z",
+  "height": 181,
+  "path": "figures/pocket-alphafold/ARAF-ARAF-AF-distance-histogram.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "ARAF ARAF-AF",
+  "title": "Hit scores by pocket class",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-alphafold/ARAF-ARAF-AF-boxplot.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "ARAF ARAF-AF",
+  "title": "ABE hit composition",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-alphafold/ARAF-ARAF-AF-ABE-pie.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "ARAF ARAF-AF",
+  "title": "CBE hit composition",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-alphafold/ARAF-ARAF-AF-CBE-pie.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "BRAF BRAF-AF",
+  "title": "Distance to ligand",
+  "caption": "LY3009120 - RAFi-DMSO-Z",
+  "height": 181,
+  "path": "figures/pocket-alphafold/BRAF-BRAF-AF-distance-histogram.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "BRAF BRAF-AF",
+  "title": "Hit scores by pocket class",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-alphafold/BRAF-BRAF-AF-boxplot.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "BRAF BRAF-AF",
+  "title": "ABE hit composition",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-alphafold/BRAF-BRAF-AF-ABE-pie.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "BRAF BRAF-AF",
+  "title": "CBE hit composition",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-alphafold/BRAF-BRAF-AF-CBE-pie.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "RAF1 RAF1-AF",
+  "title": "Distance to ligand",
+  "caption": "LY3009120 - RAFi-DMSO-Z",
+  "height": 181,
+  "path": "figures/pocket-alphafold/RAF1-RAF1-AF-distance-histogram.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "RAF1 RAF1-AF",
+  "title": "Hit scores by pocket class",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-alphafold/RAF1-RAF1-AF-boxplot.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "RAF1 RAF1-AF",
+  "title": "ABE hit composition",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-alphafold/RAF1-RAF1-AF-ABE-pie.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "RAF1 RAF1-AF",
+  "title": "CBE hit composition",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-alphafold/RAF1-RAF1-AF-CBE-pie.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "MAP2K1 MAP2K1-AF",
+  "title": "Distance to ligand",
+  "caption": "Trametinib - Trametinib-DMSO-Z",
+  "height": 181,
+  "path": "figures/pocket-alphafold/MAP2K1-MAP2K1-AF-distance-histogram.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "MAP2K1 MAP2K1-AF",
+  "title": "Hit scores by pocket class",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-alphafold/MAP2K1-MAP2K1-AF-boxplot.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "MAP2K1 MAP2K1-AF",
+  "title": "ABE hit composition",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-alphafold/MAP2K1-MAP2K1-AF-ABE-pie.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "MAP2K1 MAP2K1-AF",
+  "title": "CBE hit composition",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-alphafold/MAP2K1-MAP2K1-AF-CBE-pie.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "MAP2K2 MAP2K2-AF",
+  "title": "Distance to ligand",
+  "caption": "Trametinib - Trametinib-DMSO-Z",
+  "height": 181,
+  "path": "figures/pocket-alphafold/MAP2K2-MAP2K2-AF-distance-histogram.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "MAP2K2 MAP2K2-AF",
+  "title": "Hit scores by pocket class",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-alphafold/MAP2K2-MAP2K2-AF-boxplot.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "MAP2K2 MAP2K2-AF",
+  "title": "ABE hit composition",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-alphafold/MAP2K2-MAP2K2-AF-ABE-pie.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "MAP2K2 MAP2K2-AF",
+  "title": "CBE hit composition",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-alphafold/MAP2K2-MAP2K2-AF-CBE-pie.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "MAPK1 MAPK1-AF",
+  "title": "Distance to ligand",
+  "caption": "Temuterkib - ERKi-DMSO-Z",
+  "height": 181,
+  "path": "figures/pocket-alphafold/MAPK1-MAPK1-AF-distance-histogram.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "MAPK1 MAPK1-AF",
+  "title": "Hit scores by pocket class",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-alphafold/MAPK1-MAPK1-AF-boxplot.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "MAPK1 MAPK1-AF",
+  "title": "ABE hit composition",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-alphafold/MAPK1-MAPK1-AF-ABE-pie.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "MAPK1 MAPK1-AF",
+  "title": "CBE hit composition",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-alphafold/MAPK1-MAPK1-AF-CBE-pie.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "MAPK3 MAPK3-AF",
+  "title": "Distance to ligand",
+  "caption": "Temuterkib - ERKi-DMSO-Z",
+  "height": 181,
+  "path": "figures/pocket-alphafold/MAPK3-MAPK3-AF-distance-histogram.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "MAPK3 MAPK3-AF",
+  "title": "Hit scores by pocket class",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-alphafold/MAPK3-MAPK3-AF-boxplot.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "MAPK3 MAPK3-AF",
+  "title": "ABE hit composition",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-alphafold/MAPK3-MAPK3-AF-ABE-pie.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "MAPK3 MAPK3-AF",
+  "title": "CBE hit composition",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-alphafold/MAPK3-MAPK3-AF-CBE-pie.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "AllRAS (pooled)",
+  "title": "ABE hit composition",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-alphafold/AllRAS-ABE-pie.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "AllRAS (pooled)",
+  "title": "CBE hit composition",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-alphafold/AllRAS-CBE-pie.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "AllRAF (pooled)",
+  "title": "ABE hit composition",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-alphafold/AllRAF-ABE-pie.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "AllRAF (pooled)",
+  "title": "CBE hit composition",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-alphafold/AllRAF-CBE-pie.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "AllMEK (pooled)",
+  "title": "ABE hit composition",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-alphafold/AllMEK-ABE-pie.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "AllMEK (pooled)",
+  "title": "CBE hit composition",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-alphafold/AllMEK-CBE-pie.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "AllERK (pooled)",
+  "title": "ABE hit composition",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-alphafold/AllERK-ABE-pie.html"
+ },
+ {
+  "section": "pocket-alphafold",
+  "group": "AllERK (pooled)",
+  "title": "CBE hit composition",
+  "caption": "",
+  "height": 302,
+  "path": "figures/pocket-alphafold/AllERK-CBE-pie.html"
+ },
+ {
+  "section": "splice-heatmaps",
+  "group": "Pathway",
+  "title": "ABE, drug vs DMSO",
+  "caption": "",
+  "height": 422,
+  "path": "figures/splice-heatmaps/ABE-DMSO-norm.html"
+ },
+ {
+  "section": "splice-heatmaps",
+  "group": "RAF paralogs",
+  "title": "ABE, drug vs DMSO",
+  "caption": "",
+  "height": 211,
+  "path": "figures/splice-heatmaps/ABE-DMSO-norm-RAF.html"
+ },
+ {
+  "section": "splice-heatmaps",
+  "group": "Pathway",
+  "title": "CBE, drug vs DMSO",
+  "caption": "",
+  "height": 422,
+  "path": "figures/splice-heatmaps/CBE-DMSO-norm.html"
+ },
+ {
+  "section": "splice-heatmaps",
+  "group": "RAF paralogs",
+  "title": "CBE, drug vs DMSO",
+  "caption": "",
+  "height": 211,
+  "path": "figures/splice-heatmaps/CBE-DMSO-norm-RAF.html"
+ },
+ {
+  "section": "splice-heatmaps",
+  "group": "Pathway",
+  "title": "ABE, drug vs Day 0",
+  "caption": "",
+  "height": 422,
+  "path": "figures/splice-heatmaps/ABE-Day0-norm.html"
+ },
+ {
+  "section": "splice-heatmaps",
+  "group": "RAF paralogs",
+  "title": "ABE, drug vs Day 0",
+  "caption": "",
+  "height": 211,
+  "path": "figures/splice-heatmaps/ABE-Day0-norm-RAF.html"
+ },
+ {
+  "section": "splice-heatmaps",
+  "group": "Pathway",
+  "title": "CBE, drug vs Day 0",
+  "caption": "",
+  "height": 422,
+  "path": "figures/splice-heatmaps/CBE-Day0-norm.html"
+ },
+ {
+  "section": "splice-heatmaps",
+  "group": "RAF paralogs",
+  "title": "CBE, drug vs Day 0",
+  "caption": "",
+  "height": 211,
+  "path": "figures/splice-heatmaps/CBE-Day0-norm-RAF.html"
+ },
+ {
+  "section": "splice-heatmaps",
+  "group": "Pathway",
+  "title": "Both editors, drug vs Day 0",
+  "caption": "",
+  "height": 422,
+  "path": "figures/splice-heatmaps/pooled-Day0-norm.html"
+ },
+ {
+  "section": "splice-heatmaps",
+  "group": "RAF paralogs",
+  "title": "Both editors, drug vs Day 0",
+  "caption": "",
+  "height": 211,
+  "path": "figures/splice-heatmaps/pooled-Day0-norm-RAF.html"
+ },
+ {
+  "section": "sankey",
+  "group": "Sankey",
+  "title": "Validated resistance hits, inhibitor to gene",
+  "caption": "grey on-target, pink downstream, blue upstream",
+  "height": 620,
+  "path": "figures/sankey/validated-hits.html"
+ },
+ {
+  "section": "trajectory",
+  "group": "Validation screen",
+  "title": "Clustered heatmap",
+  "caption": "523 guides in 14 clusters",
+  "height": 1228,
+  "path": "figures/trajectory/Validation-heatmap.html"
+ },
+ {
+  "section": "trajectory",
+  "group": "MEKi screen",
+  "title": "Clustered heatmap",
+  "caption": "100 guides in 10 clusters",
+  "height": 768,
+  "path": "figures/trajectory/MEKi-heatmap.html"
+ },
+ {
+  "section": "trajectory",
+  "group": "Validation trajectory branches",
+  "title": "Clusters 1 - 2 - 3 - 5 - 10",
+  "caption": "141 guides",
+  "height": 614,
+  "path": "figures/trajectory/Validation-heatmap-Traj_13to2to1to7to11.html"
+ },
+ {
+  "section": "trajectory",
+  "group": "Validation trajectory branches",
+  "title": "Clusters 1 - 2 - 3 - 6",
+  "caption": "125 guides",
+  "height": 614,
+  "path": "figures/trajectory/Validation-heatmap-Traj_13to2to1to6.html"
+ },
+ {
+  "section": "trajectory",
+  "group": "Validation trajectory branches",
+  "title": "Clusters 1 - 2 - 3 - 4",
+  "caption": "198 guides",
+  "height": 614,
+  "path": "figures/trajectory/Validation-heatmap-Traj_13to2to1to4.html"
+ },
+ {
+  "section": "trajectory",
+  "group": "Validation trajectory branches",
+  "title": "Clusters 4 - 8 - 12",
+  "caption": "112 guides",
+  "height": 614,
+  "path": "figures/trajectory/Validation-heatmap-Traj_4to9to5.html"
+ },
+ {
+  "section": "trajectory",
+  "group": "Validation trajectory branches",
+  "title": "Clusters 4 - 7 - 9 - 14",
+  "caption": "220 guides",
+  "height": 614,
+  "path": "figures/trajectory/Validation-heatmap-Traj_4to8to10to0.html"
+ },
+ {
+  "section": "trajectory",
+  "group": "Validation trajectory branches",
+  "title": "Clusters 4 - 7 - 9 - 13",
+  "caption": "284 guides",
+  "height": 614,
+  "path": "figures/trajectory/Validation-heatmap-Traj_4to8to10to3.html"
+ },
+ {
+  "section": "trajectory",
+  "group": "Validation trajectory branches",
+  "title": "Full trajectory path",
+  "caption": "523 guides",
+  "height": 1228,
+  "path": "figures/trajectory/Validation-heatmap-Traj_13to2to1to6to7to11to4to8to10to9to5to0to12to3.html"
+ },
+ {
+  "section": "trajectory",
+  "group": "Validation screen",
+  "title": "PCA projection, coloured by cluster",
+  "caption": "BIC 11533 \u00b7 PC1 49.3%",
+  "height": 566,
+  "path": "figures/trajectory/Validation-scatter-cluster.html"
+ },
+ {
+  "section": "trajectory",
+  "group": "Validation screen",
+  "title": "PCA projection, coloured by pseudotime",
+  "caption": "BIC 11533 \u00b7 PC1 49.3%",
+  "height": 566,
+  "path": "figures/trajectory/Validation-scatter-pseudotime.html"
+ },
+ {
+  "section": "trajectory",
+  "group": "MEKi screen",
+  "title": "PCA projection, coloured by cluster",
+  "caption": "BIC 3586 \u00b7 PC1 52.0%",
+  "height": 566,
+  "path": "figures/trajectory/MEKi-scatter-cluster.html"
+ },
+ {
+  "section": "trajectory",
+  "group": "MEKi screen",
+  "title": "PCA projection, coloured by pseudotime",
+  "caption": "BIC 3586 \u00b7 PC1 52.0%",
+  "height": 566,
+  "path": "figures/trajectory/MEKi-scatter-pseudotime.html"
+ },
+ {
+  "section": "lof-vs-dms",
+  "group": "Correlation",
+  "title": "All genes",
+  "caption": "",
+  "height": 302,
+  "path": "figures/lof-vs-dms/all-genes-correlation.html"
+ },
+ {
+  "section": "lof-vs-dms",
+  "group": "Correlation",
+  "title": "PTPN11",
+  "caption": "",
+  "height": 302,
+  "path": "figures/lof-vs-dms/PTPN11-correlation.html"
+ },
+ {
+  "section": "lof-vs-dms",
+  "group": "Correlation",
+  "title": "KRAS",
+  "caption": "",
+  "height": 302,
+  "path": "figures/lof-vs-dms/KRAS-correlation.html"
+ },
+ {
+  "section": "lof-vs-dms",
+  "group": "Correlation",
+  "title": "ERK2 (LOF-ERK screen)",
+  "caption": "",
+  "height": 302,
+  "path": "figures/lof-vs-dms/MAPK1-LOF-ERK-correlation.html"
+ },
+ {
+  "section": "lof-vs-dms",
+  "group": "Hit distribution",
+  "title": "All genes (jitterbox)",
+  "caption": "",
+  "height": 264,
+  "path": "figures/lof-vs-dms/all-hit-boxplot-jitterbox.html"
+ },
+ {
+  "section": "lof-vs-dms",
+  "group": "Hit distribution",
+  "title": "All genes (kde)",
+  "caption": "",
+  "height": 264,
+  "path": "figures/lof-vs-dms/all-hit-boxplot-kde.html"
+ },
+ {
+  "section": "lof-vs-dms",
+  "group": "Hit distribution",
+  "title": "ERK2 (LOF-ERK screen) (jitterbox)",
+  "caption": "",
+  "height": 264,
+  "path": "figures/lof-vs-dms/MAPK1-hit-boxplot-jitterbox.html"
+ },
+ {
+  "section": "lof-vs-dms",
+  "group": "Hit distribution",
+  "title": "ERK2 (LOF-ERK screen) (kde)",
+  "caption": "",
+  "height": 264,
+  "path": "figures/lof-vs-dms/MAPK1-hit-boxplot-kde.html"
+ },
+ {
+  "section": "cbioportal",
+  "group": "PTPN11",
+  "title": "co-crystal structure",
+  "caption": "143 patient mutations",
+  "height": 652,
+  "path": "figures/cbioportal/PTPN11-co-crystal.html"
+ },
+ {
+  "section": "cbioportal",
+  "group": "KRAS",
+  "title": "co-crystal structure",
+  "caption": "777 patient mutations",
+  "height": 652,
+  "path": "figures/cbioportal/KRAS-co-crystal.html"
+ },
+ {
+  "section": "cbioportal",
+  "group": "BRAF",
+  "title": "co-crystal structure",
+  "caption": "770 patient mutations",
+  "height": 652,
+  "path": "figures/cbioportal/BRAF-co-crystal.html"
+ },
+ {
+  "section": "cbioportal",
+  "group": "MAP2K1",
+  "title": "co-crystal structure",
+  "caption": "103 patient mutations",
+  "height": 652,
+  "path": "figures/cbioportal/MAP2K1-co-crystal.html"
+ },
+ {
+  "section": "cbioportal",
+  "group": "MAPK1",
+  "title": "co-crystal structure",
+  "caption": "69 patient mutations",
+  "height": 652,
+  "path": "figures/cbioportal/MAPK1-co-crystal.html"
+ },
+ {
+  "section": "cbioportal",
+  "group": "PTPN11",
+  "title": "AlphaFold structure",
+  "caption": "143 patient mutations",
+  "height": 652,
+  "path": "figures/cbioportal/PTPN11-AlphaFold.html"
+ },
+ {
+  "section": "cbioportal",
+  "group": "KRAS",
+  "title": "AlphaFold structure",
+  "caption": "777 patient mutations",
+  "height": 652,
+  "path": "figures/cbioportal/KRAS-AlphaFold.html"
+ },
+ {
+  "section": "cbioportal",
+  "group": "NRAS",
+  "title": "AlphaFold structure",
+  "caption": "301 patient mutations",
+  "height": 652,
+  "path": "figures/cbioportal/NRAS-AlphaFold.html"
+ },
+ {
+  "section": "cbioportal",
+  "group": "HRAS",
+  "title": "AlphaFold structure",
+  "caption": "137 patient mutations",
+  "height": 652,
+  "path": "figures/cbioportal/HRAS-AlphaFold.html"
+ },
+ {
+  "section": "cbioportal",
+  "group": "MRAS",
+  "title": "AlphaFold structure",
+  "caption": "33 patient mutations",
+  "height": 652,
+  "path": "figures/cbioportal/MRAS-AlphaFold.html"
+ },
+ {
+  "section": "cbioportal",
+  "group": "ARAF",
+  "title": "AlphaFold structure",
+  "caption": "131 patient mutations",
+  "height": 652,
+  "path": "figures/cbioportal/ARAF-AlphaFold.html"
+ },
+ {
+  "section": "cbioportal",
+  "group": "BRAF",
+  "title": "AlphaFold structure",
+  "caption": "770 patient mutations",
+  "height": 652,
+  "path": "figures/cbioportal/BRAF-AlphaFold.html"
+ },
+ {
+  "section": "cbioportal",
+  "group": "RAF1",
+  "title": "AlphaFold structure",
+  "caption": "111 patient mutations",
+  "height": 652,
+  "path": "figures/cbioportal/RAF1-AlphaFold.html"
+ },
+ {
+  "section": "cbioportal",
+  "group": "MAP2K1",
+  "title": "AlphaFold structure",
+  "caption": "103 patient mutations",
+  "height": 652,
+  "path": "figures/cbioportal/MAP2K1-AlphaFold.html"
+ },
+ {
+  "section": "cbioportal",
+  "group": "MAP2K2",
+  "title": "AlphaFold structure",
+  "caption": "75 patient mutations",
+  "height": 652,
+  "path": "figures/cbioportal/MAP2K2-AlphaFold.html"
+ },
+ {
+  "section": "cbioportal",
+  "group": "MAPK1",
+  "title": "AlphaFold structure",
+  "caption": "69 patient mutations",
+  "height": 652,
+  "path": "figures/cbioportal/MAPK1-AlphaFold.html"
+ },
+ {
+  "section": "cbioportal",
+  "group": "MAPK3",
+  "title": "AlphaFold structure",
+  "caption": "48 patient mutations",
+  "height": 652,
+  "path": "figures/cbioportal/MAPK3-AlphaFold.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "GOF ABE",
+  "title": "DMSO-Day0-Z",
+  "caption": "15656 guides",
+  "height": 307,
+  "path": "figures/boxplots/GOF-ABE-DMSO-Day0-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "GOF ABE",
+  "title": "SHP2i-DMSO-Z",
+  "caption": "15656 guides",
+  "height": 307,
+  "path": "figures/boxplots/GOF-ABE-SHP2i-DMSO-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "GOF ABE",
+  "title": "KRASi-DMSO-Z",
+  "caption": "15656 guides",
+  "height": 307,
+  "path": "figures/boxplots/GOF-ABE-KRASi-DMSO-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "GOF ABE",
+  "title": "RAFi-DMSO-Z",
+  "caption": "15656 guides",
+  "height": 307,
+  "path": "figures/boxplots/GOF-ABE-RAFi-DMSO-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "GOF ABE",
+  "title": "Trametinib-DMSO-Z",
+  "caption": "15656 guides",
+  "height": 307,
+  "path": "figures/boxplots/GOF-ABE-Trametinib-DMSO-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "GOF ABE",
+  "title": "ERKi-DMSO-Z",
+  "caption": "15656 guides",
+  "height": 307,
+  "path": "figures/boxplots/GOF-ABE-ERKi-DMSO-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "GOF ABE",
+  "title": "SHP2i-Day0-Z",
+  "caption": "15656 guides",
+  "height": 307,
+  "path": "figures/boxplots/GOF-ABE-SHP2i-Day0-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "GOF ABE",
+  "title": "KRASi-Day0-Z",
+  "caption": "15656 guides",
+  "height": 307,
+  "path": "figures/boxplots/GOF-ABE-KRASi-Day0-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "GOF ABE",
+  "title": "RAFi-Day0-Z",
+  "caption": "15656 guides",
+  "height": 307,
+  "path": "figures/boxplots/GOF-ABE-RAFi-Day0-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "GOF ABE",
+  "title": "Trametinib-Day0-Z",
+  "caption": "15656 guides",
+  "height": 307,
+  "path": "figures/boxplots/GOF-ABE-Trametinib-Day0-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "GOF ABE",
+  "title": "ERKi-Day0-Z",
+  "caption": "15656 guides",
+  "height": 307,
+  "path": "figures/boxplots/GOF-ABE-ERKi-Day0-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "GOF CBE",
+  "title": "DMSO-Day0-Z",
+  "caption": "15614 guides",
+  "height": 307,
+  "path": "figures/boxplots/GOF-CBE-DMSO-Day0-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "GOF CBE",
+  "title": "SHP2i-DMSO-Z",
+  "caption": "15614 guides",
+  "height": 307,
+  "path": "figures/boxplots/GOF-CBE-SHP2i-DMSO-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "GOF CBE",
+  "title": "KRASi-DMSO-Z",
+  "caption": "15614 guides",
+  "height": 307,
+  "path": "figures/boxplots/GOF-CBE-KRASi-DMSO-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "GOF CBE",
+  "title": "RAFi-DMSO-Z",
+  "caption": "15614 guides",
+  "height": 307,
+  "path": "figures/boxplots/GOF-CBE-RAFi-DMSO-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "GOF CBE",
+  "title": "Trametinib-DMSO-Z",
+  "caption": "15614 guides",
+  "height": 307,
+  "path": "figures/boxplots/GOF-CBE-Trametinib-DMSO-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "GOF CBE",
+  "title": "ERKi-DMSO-Z",
+  "caption": "15614 guides",
+  "height": 307,
+  "path": "figures/boxplots/GOF-CBE-ERKi-DMSO-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "GOF CBE",
+  "title": "SHP2i-Day0-Z",
+  "caption": "15614 guides",
+  "height": 307,
+  "path": "figures/boxplots/GOF-CBE-SHP2i-Day0-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "GOF CBE",
+  "title": "KRASi-Day0-Z",
+  "caption": "15614 guides",
+  "height": 307,
+  "path": "figures/boxplots/GOF-CBE-KRASi-Day0-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "GOF CBE",
+  "title": "RAFi-Day0-Z",
+  "caption": "15614 guides",
+  "height": 307,
+  "path": "figures/boxplots/GOF-CBE-RAFi-Day0-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "GOF CBE",
+  "title": "Trametinib-Day0-Z",
+  "caption": "15614 guides",
+  "height": 307,
+  "path": "figures/boxplots/GOF-CBE-Trametinib-Day0-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "GOF CBE",
+  "title": "ERKi-Day0-Z",
+  "caption": "15614 guides",
+  "height": 307,
+  "path": "figures/boxplots/GOF-CBE-ERKi-Day0-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "MEKi ABE",
+  "title": "DMSO-Day0-Z",
+  "caption": "7775 guides",
+  "height": 307,
+  "path": "figures/boxplots/MEKi-ABE-DMSO-Day0-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "MEKi ABE",
+  "title": "Trametinib-DMSO-Z",
+  "caption": "7775 guides",
+  "height": 307,
+  "path": "figures/boxplots/MEKi-ABE-Trametinib-DMSO-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "MEKi ABE",
+  "title": "Trametiglue-DMSO-Z",
+  "caption": "7775 guides",
+  "height": 307,
+  "path": "figures/boxplots/MEKi-ABE-Trametiglue-DMSO-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "MEKi ABE",
+  "title": "GDC0623-DMSO-Z",
+  "caption": "7775 guides",
+  "height": 307,
+  "path": "figures/boxplots/MEKi-ABE-GDC0623-DMSO-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "MEKi ABE",
+  "title": "Avutametinib-DMSO-Z",
+  "caption": "7775 guides",
+  "height": 307,
+  "path": "figures/boxplots/MEKi-ABE-Avutametinib-DMSO-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "MEKi ABE",
+  "title": "Selumetinib-DMSO-Z",
+  "caption": "7775 guides",
+  "height": 307,
+  "path": "figures/boxplots/MEKi-ABE-Selumetinib-DMSO-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "MEKi ABE",
+  "title": "Mirdametinib-DMSO-Z",
+  "caption": "7775 guides",
+  "height": 307,
+  "path": "figures/boxplots/MEKi-ABE-Mirdametinib-DMSO-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "MEKi ABE",
+  "title": "MAP855-DMSO-Z",
+  "caption": "7775 guides",
+  "height": 307,
+  "path": "figures/boxplots/MEKi-ABE-MAP855-DMSO-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "MEKi ABE",
+  "title": "Cobimetinib-DMSO-Z",
+  "caption": "7775 guides",
+  "height": 307,
+  "path": "figures/boxplots/MEKi-ABE-Cobimetinib-DMSO-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "MEKi ABE",
+  "title": "APS_Adagrasib-DMSO-Z",
+  "caption": "7775 guides",
+  "height": 307,
+  "path": "figures/boxplots/MEKi-ABE-APS_Adagrasib-DMSO-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "MEKi ABE",
+  "title": "Trametinib-Day0-Z",
+  "caption": "7775 guides",
+  "height": 307,
+  "path": "figures/boxplots/MEKi-ABE-Trametinib-Day0-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "MEKi ABE",
+  "title": "Trametiglue-Day0-Z",
+  "caption": "7775 guides",
+  "height": 307,
+  "path": "figures/boxplots/MEKi-ABE-Trametiglue-Day0-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "MEKi ABE",
+  "title": "GDC0623-Day0-Z",
+  "caption": "7775 guides",
+  "height": 307,
+  "path": "figures/boxplots/MEKi-ABE-GDC0623-Day0-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "MEKi ABE",
+  "title": "Avutametinib-Day0-Z",
+  "caption": "7775 guides",
+  "height": 307,
+  "path": "figures/boxplots/MEKi-ABE-Avutametinib-Day0-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "MEKi ABE",
+  "title": "Selumetinib-Day0-Z",
+  "caption": "7775 guides",
+  "height": 307,
+  "path": "figures/boxplots/MEKi-ABE-Selumetinib-Day0-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "MEKi ABE",
+  "title": "Mirdametinib-Day0-Z",
+  "caption": "7775 guides",
+  "height": 307,
+  "path": "figures/boxplots/MEKi-ABE-Mirdametinib-Day0-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "MEKi ABE",
+  "title": "MAP855-Day0-Z",
+  "caption": "7775 guides",
+  "height": 307,
+  "path": "figures/boxplots/MEKi-ABE-MAP855-Day0-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "MEKi ABE",
+  "title": "Cobimetinib-Day0-Z",
+  "caption": "7775 guides",
+  "height": 307,
+  "path": "figures/boxplots/MEKi-ABE-Cobimetinib-Day0-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "MEKi ABE",
+  "title": "APS_Adagrasib-Day0-Z",
+  "caption": "7775 guides",
+  "height": 307,
+  "path": "figures/boxplots/MEKi-ABE-APS_Adagrasib-Day0-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "MEKi CBE",
+  "title": "DMSO-Day0-Z",
+  "caption": "7789 guides",
+  "height": 307,
+  "path": "figures/boxplots/MEKi-CBE-DMSO-Day0-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "MEKi CBE",
+  "title": "Trametinib-DMSO-Z",
+  "caption": "7789 guides",
+  "height": 307,
+  "path": "figures/boxplots/MEKi-CBE-Trametinib-DMSO-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "MEKi CBE",
+  "title": "Trametiglue-DMSO-Z",
+  "caption": "7789 guides",
+  "height": 307,
+  "path": "figures/boxplots/MEKi-CBE-Trametiglue-DMSO-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "MEKi CBE",
+  "title": "GDC0623-DMSO-Z",
+  "caption": "7789 guides",
+  "height": 307,
+  "path": "figures/boxplots/MEKi-CBE-GDC0623-DMSO-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "MEKi CBE",
+  "title": "Avutametinib-DMSO-Z",
+  "caption": "7789 guides",
+  "height": 307,
+  "path": "figures/boxplots/MEKi-CBE-Avutametinib-DMSO-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "MEKi CBE",
+  "title": "Selumetinib-DMSO-Z",
+  "caption": "7789 guides",
+  "height": 307,
+  "path": "figures/boxplots/MEKi-CBE-Selumetinib-DMSO-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "MEKi CBE",
+  "title": "Mirdametinib-DMSO-Z",
+  "caption": "7789 guides",
+  "height": 307,
+  "path": "figures/boxplots/MEKi-CBE-Mirdametinib-DMSO-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "MEKi CBE",
+  "title": "MAP855-DMSO-Z",
+  "caption": "7789 guides",
+  "height": 307,
+  "path": "figures/boxplots/MEKi-CBE-MAP855-DMSO-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "MEKi CBE",
+  "title": "Cobimetinib-DMSO-Z",
+  "caption": "7789 guides",
+  "height": 307,
+  "path": "figures/boxplots/MEKi-CBE-Cobimetinib-DMSO-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "MEKi CBE",
+  "title": "APS_Adagrasib-DMSO-Z",
+  "caption": "7789 guides",
+  "height": 307,
+  "path": "figures/boxplots/MEKi-CBE-APS_Adagrasib-DMSO-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "MEKi CBE",
+  "title": "Trametinib-Day0-Z",
+  "caption": "7789 guides",
+  "height": 307,
+  "path": "figures/boxplots/MEKi-CBE-Trametinib-Day0-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "MEKi CBE",
+  "title": "Trametiglue-Day0-Z",
+  "caption": "7789 guides",
+  "height": 307,
+  "path": "figures/boxplots/MEKi-CBE-Trametiglue-Day0-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "MEKi CBE",
+  "title": "GDC0623-Day0-Z",
+  "caption": "7789 guides",
+  "height": 307,
+  "path": "figures/boxplots/MEKi-CBE-GDC0623-Day0-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "MEKi CBE",
+  "title": "Avutametinib-Day0-Z",
+  "caption": "7789 guides",
+  "height": 307,
+  "path": "figures/boxplots/MEKi-CBE-Avutametinib-Day0-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "MEKi CBE",
+  "title": "Selumetinib-Day0-Z",
+  "caption": "7789 guides",
+  "height": 307,
+  "path": "figures/boxplots/MEKi-CBE-Selumetinib-Day0-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "MEKi CBE",
+  "title": "Mirdametinib-Day0-Z",
+  "caption": "7789 guides",
+  "height": 307,
+  "path": "figures/boxplots/MEKi-CBE-Mirdametinib-Day0-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "MEKi CBE",
+  "title": "MAP855-Day0-Z",
+  "caption": "7789 guides",
+  "height": 307,
+  "path": "figures/boxplots/MEKi-CBE-MAP855-Day0-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "MEKi CBE",
+  "title": "Cobimetinib-Day0-Z",
+  "caption": "7789 guides",
+  "height": 307,
+  "path": "figures/boxplots/MEKi-CBE-Cobimetinib-Day0-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "MEKi CBE",
+  "title": "APS_Adagrasib-Day0-Z",
+  "caption": "7789 guides",
+  "height": 307,
+  "path": "figures/boxplots/MEKi-CBE-APS_Adagrasib-Day0-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "LOF ABE",
+  "title": "Dox-UT-Z",
+  "caption": "14484 guides",
+  "height": 307,
+  "path": "figures/boxplots/LOF-ABE-Dox-UT-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "LOF CBE",
+  "title": "Dox-UT-Z",
+  "caption": "14439 guides",
+  "height": 307,
+  "path": "figures/boxplots/LOF-CBE-Dox-UT-Z.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "Controls versus essential",
+  "title": "GOF, DMSO-Day0-Z",
+  "caption": "ABE Control vs ABE Essential p = 4.78e-06; CBE Control vs CBE Essential p = 0.0059",
+  "height": 307,
+  "path": "figures/boxplots/GOF-DMSO-Day0-Z-controls.html"
+ },
+ {
+  "section": "boxplots",
+  "group": "Controls versus essential",
+  "title": "LOF, UT-Day0-Z",
+  "caption": "ABE Control vs ABE Essential p = 6.89e-10; CBE Control vs CBE Essential p = 4.46e-10",
+  "height": 307,
+  "path": "figures/boxplots/LOF-UT-Day0-Z-controls.html"
+ }
+]

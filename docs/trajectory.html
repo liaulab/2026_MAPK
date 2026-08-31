@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GMM clustering and trajectory</title>
+<link rel="stylesheet" href="assets/style.css">
+<script>(function(){try{var t=localStorage.getItem('mapk-theme');if(t==='light'||t==='dark'){document.documentElement.dataset.theme=t;}}catch(e){}})();</script>
+</head>
+<body>
+<header class="site">
+  <div class="inner">
+    <div class="masthead">
+      <div>
+        <h1><a href="index.html" style="text-decoration:none;color:inherit">MAPK base-editing screens</a></h1>
+        <p class="lede">GMM clustering and trajectory</p>
+      </div>
+      <button id="theme" class="theme" type="button" hidden
+              aria-label="Switch between automatic, light and dark appearance">Theme</button>
+    </div>
+  </div>
+</header>
+<main>
+  <nav class="crumbs"><a href="index.html">Overview</a> &rsaquo; GMM clustering and trajectory</nav>
+  <h2>GMM clustering and trajectory</h2>
+  <p class="lede">Guides clustered on their inhibitor-response profiles. Each clustered heatmap is blocked by cluster and carries a gene bar per guide; the validation screen additionally gets a minimum-spanning-tree pseudotime through the mixture components.</p>
+  <div class="filter">
+    <input id="filter" type="search" placeholder="Filter by screen or figure name"
+           aria-label="Filter figures">
+    <span class="hint">13 figures in 3 groups &middot; figures load when a group is opened</span>
+  </div>
+  <details class="group" open data-search="validation screen clustered heatmap pca projection, coloured by cluster pca projection, coloured by pseudotime">
+    <summary><span class="label">Validation screen</span><span class="n">3 figures</span></summary>
+    <div class="body">
+      <figure class="figure">
+        <figcaption>
+          <span class="name">Clustered heatmap</span>
+          <span class="note">523 guides in 14 clusters</span>
+        </figcaption>
+        <iframe src="figures/trajectory/Validation-heatmap.html" height="1244" loading="lazy"
+                title="Clustered heatmap"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">PCA projection, coloured by cluster</span>
+          <span class="note">BIC 11533 · PC1 49.3%</span>
+        </figcaption>
+        <iframe src="figures/trajectory/Validation-scatter-cluster.html" height="582" loading="lazy"
+                title="PCA projection, coloured by cluster"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">PCA projection, coloured by pseudotime</span>
+          <span class="note">BIC 11533 · PC1 49.3%</span>
+        </figcaption>
+        <iframe src="figures/trajectory/Validation-scatter-pseudotime.html" height="582" loading="lazy"
+                title="PCA projection, coloured by pseudotime"></iframe>
+      </figure>
+    </div>
+  </details>
+  <details class="group" data-search="meki screen clustered heatmap pca projection, coloured by cluster pca projection, coloured by pseudotime">
+    <summary><span class="label">MEKi screen</span><span class="n">3 figures</span></summary>
+    <div class="body">
+      <figure class="figure">
+        <figcaption>
+          <span class="name">Clustered heatmap</span>
+          <span class="note">100 guides in 10 clusters</span>
+        </figcaption>
+        <iframe src="figures/trajectory/MEKi-heatmap.html" height="784" loading="lazy"
+                title="Clustered heatmap"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">PCA projection, coloured by cluster</span>
+          <span class="note">BIC 3586 · PC1 52.0%</span>
+        </figcaption>
+        <iframe src="figures/trajectory/MEKi-scatter-cluster.html" height="582" loading="lazy"
+                title="PCA projection, coloured by cluster"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">PCA projection, coloured by pseudotime</span>
+          <span class="note">BIC 3586 · PC1 52.0%</span>
+        </figcaption>
+        <iframe src="figures/trajectory/MEKi-scatter-pseudotime.html" height="582" loading="lazy"
+                title="PCA projection, coloured by pseudotime"></iframe>
+      </figure>
+    </div>
+  </details>
+  <details class="group" data-search="validation trajectory branches clusters 1 - 2 - 3 - 5 - 10 clusters 1 - 2 - 3 - 6 clusters 1 - 2 - 3 - 4 clusters 4 - 8 - 12 clusters 4 - 7 - 9 - 14 clusters 4 - 7 - 9 - 13 full trajectory path">
+    <summary><span class="label">Validation trajectory branches</span><span class="n">7 figures</span></summary>
+    <div class="body">
+      <figure class="figure">
+        <figcaption>
+          <span class="name">Clusters 1 - 2 - 3 - 5 - 10</span>
+          <span class="note">141 guides</span>
+        </figcaption>
+        <iframe src="figures/trajectory/Validation-heatmap-Traj_13to2to1to7to11.html" height="630" loading="lazy"
+                title="Clusters 1 - 2 - 3 - 5 - 10"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">Clusters 1 - 2 - 3 - 6</span>
+          <span class="note">125 guides</span>
+        </figcaption>
+        <iframe src="figures/trajectory/Validation-heatmap-Traj_13to2to1to6.html" height="630" loading="lazy"
+                title="Clusters 1 - 2 - 3 - 6"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">Clusters 1 - 2 - 3 - 4</span>
+          <span class="note">198 guides</span>
+        </figcaption>
+        <iframe src="figures/trajectory/Validation-heatmap-Traj_13to2to1to4.html" height="630" loading="lazy"
+                title="Clusters 1 - 2 - 3 - 4"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">Clusters 4 - 8 - 12</span>
+          <span class="note">112 guides</span>
+        </figcaption>
+        <iframe src="figures/trajectory/Validation-heatmap-Traj_4to9to5.html" height="630" loading="lazy"
+                title="Clusters 4 - 8 - 12"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">Clusters 4 - 7 - 9 - 14</span>
+          <span class="note">220 guides</span>
+        </figcaption>
+        <iframe src="figures/trajectory/Validation-heatmap-Traj_4to8to10to0.html" height="630" loading="lazy"
+                title="Clusters 4 - 7 - 9 - 14"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">Clusters 4 - 7 - 9 - 13</span>
+          <span class="note">284 guides</span>
+        </figcaption>
+        <iframe src="figures/trajectory/Validation-heatmap-Traj_4to8to10to3.html" height="630" loading="lazy"
+                title="Clusters 4 - 7 - 9 - 13"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">Full trajectory path</span>
+          <span class="note">523 guides</span>
+        </figcaption>
+        <iframe src="figures/trajectory/Validation-heatmap-Traj_13to2to1to6to7to11to4to8to10to9to5to0to12to3.html" height="1244" loading="lazy"
+                title="Full trajectory path"></iframe>
+      </figure>
+    </div>
+  </details>
+
+</main>
+<footer class="site">
+  <div class="inner">
+    <p>Interactive companion to the MAPK base-editing screen manuscript.
+       Figures generated with <a href="https://github.com/liaulab/be-scan">be_scan</a>
+       and Plotly. Built 2026-08-31.</p>
+    <p>Every figure is also available as a print-ready SVG in the repository
+       under <code>Outputs/</code>. Screen data is in
+       <code>TableS1-ScreenData.xlsx</code>.</p>
+  </div>
+</footer>
+<script>// Theme toggle, cycling auto -> light -> dark. The choice is remembered per
+// browser. Without JS the button stays hidden and the page follows the OS.
+(function () {
+  var button = document.getElementById('theme');
+  if (!button) return;
+  var order = ['auto', 'light', 'dark'];
+
+  function stored() {
+    try { return localStorage.getItem('mapk-theme') || 'auto'; } catch (e) { return 'auto'; }
+  }
+  function apply(mode) {
+    if (mode === 'auto') { delete document.documentElement.dataset.theme; }
+    else { document.documentElement.dataset.theme = mode; }
+    button.textContent = 'Theme: ' + mode;
+    try { localStorage.setItem('mapk-theme', mode); } catch (e) {}
+  }
+
+  button.hidden = false;
+  apply(stored());
+  button.addEventListener('click', function () {
+    apply(order[(order.indexOf(stored()) + 1) % order.length]);
+  });
+})();
+// Filters the group list. Without JS every group is still present and open-able.
+(function () {
+  var box = document.getElementById('filter');
+  if (!box) return;
+  var groups = Array.prototype.slice.call(document.querySelectorAll('details.group'));
+  box.addEventListener('input', function () {
+    var q = box.value.trim().toLowerCase();
+    groups.forEach(function (g) {
+      var hit = !q || g.dataset.search.indexOf(q) !== -1;
+      g.style.display = hit ? '' : 'none';
+      if (q && hit) { g.open = true; }
+    });
+  });
+})();
+</script>
+</body>
+</html>

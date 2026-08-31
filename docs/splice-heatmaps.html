@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Splice-guide validation heatmaps</title>
+<link rel="stylesheet" href="assets/style.css">
+<script>(function(){try{var t=localStorage.getItem('mapk-theme');if(t==='light'||t==='dark'){document.documentElement.dataset.theme=t;}}catch(e){}})();</script>
+</head>
+<body>
+<header class="site">
+  <div class="inner">
+    <div class="masthead">
+      <div>
+        <h1><a href="index.html" style="text-decoration:none;color:inherit">MAPK base-editing screens</a></h1>
+        <p class="lede">Splice-guide validation heatmaps</p>
+      </div>
+      <button id="theme" class="theme" type="button" hidden
+              aria-label="Switch between automatic, light and dark appearance">Theme</button>
+    </div>
+  </div>
+</header>
+<main>
+  <nav class="crumbs"><a href="index.html">Overview</a> &rsaquo; Splice-guide validation heatmaps</nav>
+  <h2>Splice-guide validation heatmaps</h2>
+  <p class="lede">Mean Z-score per gene and condition for the essential-splice-site guides, i.e. the phenotype of ablating each node. Each panel is drawn across the whole pathway and across the RAF paralogs alone.</p>
+  <div class="filter">
+    <input id="filter" type="search" placeholder="Filter by gene set or figure name"
+           aria-label="Filter figures">
+    <span class="hint">10 figures in 2 groups &middot; figures load when a group is opened</span>
+  </div>
+  <details class="group" open data-search="pathway abe, drug vs dmso cbe, drug vs dmso abe, drug vs day 0 cbe, drug vs day 0 both editors, drug vs day 0">
+    <summary><span class="label">Pathway</span><span class="n">5 figures</span></summary>
+    <div class="body">
+      <figure class="figure">
+        <figcaption>
+          <span class="name">ABE, drug vs DMSO</span>
+          
+        </figcaption>
+        <iframe src="figures/splice-heatmaps/ABE-DMSO-norm.html" height="438" loading="lazy"
+                title="ABE, drug vs DMSO"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">CBE, drug vs DMSO</span>
+          
+        </figcaption>
+        <iframe src="figures/splice-heatmaps/CBE-DMSO-norm.html" height="438" loading="lazy"
+                title="CBE, drug vs DMSO"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">ABE, drug vs Day 0</span>
+          
+        </figcaption>
+        <iframe src="figures/splice-heatmaps/ABE-Day0-norm.html" height="438" loading="lazy"
+                title="ABE, drug vs Day 0"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">CBE, drug vs Day 0</span>
+          
+        </figcaption>
+        <iframe src="figures/splice-heatmaps/CBE-Day0-norm.html" height="438" loading="lazy"
+                title="CBE, drug vs Day 0"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">Both editors, drug vs Day 0</span>
+          
+        </figcaption>
+        <iframe src="figures/splice-heatmaps/pooled-Day0-norm.html" height="438" loading="lazy"
+                title="Both editors, drug vs Day 0"></iframe>
+      </figure>
+    </div>
+  </details>
+  <details class="group" data-search="raf paralogs abe, drug vs dmso cbe, drug vs dmso abe, drug vs day 0 cbe, drug vs day 0 both editors, drug vs day 0">
+    <summary><span class="label">RAF paralogs</span><span class="n">5 figures</span></summary>
+    <div class="body">
+      <figure class="figure">
+        <figcaption>
+          <span class="name">ABE, drug vs DMSO</span>
+          
+        </figcaption>
+        <iframe src="figures/splice-heatmaps/ABE-DMSO-norm-RAF.html" height="227" loading="lazy"
+                title="ABE, drug vs DMSO"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">CBE, drug vs DMSO</span>
+          
+        </figcaption>
+        <iframe src="figures/splice-heatmaps/CBE-DMSO-norm-RAF.html" height="227" loading="lazy"
+                title="CBE, drug vs DMSO"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">ABE, drug vs Day 0</span>
+          
+        </figcaption>
+        <iframe src="figures/splice-heatmaps/ABE-Day0-norm-RAF.html" height="227" loading="lazy"
+                title="ABE, drug vs Day 0"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">CBE, drug vs Day 0</span>
+          
+        </figcaption>
+        <iframe src="figures/splice-heatmaps/CBE-Day0-norm-RAF.html" height="227" loading="lazy"
+                title="CBE, drug vs Day 0"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">Both editors, drug vs Day 0</span>
+          
+        </figcaption>
+        <iframe src="figures/splice-heatmaps/pooled-Day0-norm-RAF.html" height="227" loading="lazy"
+                title="Both editors, drug vs Day 0"></iframe>
+      </figure>
+    </div>
+  </details>
+
+</main>
+<footer class="site">
+  <div class="inner">
+    <p>Interactive companion to the MAPK base-editing screen manuscript.
+       Figures generated with <a href="https://github.com/liaulab/be-scan">be_scan</a>
+       and Plotly. Built 2026-08-31.</p>
+    <p>Every figure is also available as a print-ready SVG in the repository
+       under <code>Outputs/</code>. Screen data is in
+       <code>TableS1-ScreenData.xlsx</code>.</p>
+  </div>
+</footer>
+<script>// Theme toggle, cycling auto -> light -> dark. The choice is remembered per
+// browser. Without JS the button stays hidden and the page follows the OS.
+(function () {
+  var button = document.getElementById('theme');
+  if (!button) return;
+  var order = ['auto', 'light', 'dark'];
+
+  function stored() {
+    try { return localStorage.getItem('mapk-theme') || 'auto'; } catch (e) { return 'auto'; }
+  }
+  function apply(mode) {
+    if (mode === 'auto') { delete document.documentElement.dataset.theme; }
+    else { document.documentElement.dataset.theme = mode; }
+    button.textContent = 'Theme: ' + mode;
+    try { localStorage.setItem('mapk-theme', mode); } catch (e) {}
+  }
+
+  button.hidden = false;
+  apply(stored());
+  button.addEventListener('click', function () {
+    apply(order[(order.indexOf(stored()) + 1) % order.length]);
+  });
+})();
+// Filters the group list. Without JS every group is still present and open-able.
+(function () {
+  var box = document.getElementById('filter');
+  if (!box) return;
+  var groups = Array.prototype.slice.call(document.querySelectorAll('details.group'));
+  box.addEventListener('input', function () {
+    var q = box.value.trim().toLowerCase();
+    groups.forEach(function (g) {
+      var hit = !q || g.dataset.search.indexOf(q) !== -1;
+      g.style.display = hit ? '' : 'none';
+      if (q && hit) { g.open = true; }
+    });
+  });
+})();
+</script>
+</body>
+</html>

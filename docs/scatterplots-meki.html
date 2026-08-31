@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MEKi screens</title>
+<link rel="stylesheet" href="assets/style.css">
+<script>(function(){try{var t=localStorage.getItem('mapk-theme');if(t==='light'||t==='dark'){document.documentElement.dataset.theme=t;}}catch(e){}})();</script>
+</head>
+<body>
+<header class="site">
+  <div class="inner">
+    <div class="masthead">
+      <div>
+        <h1><a href="index.html" style="text-decoration:none;color:inherit">MAPK base-editing screens</a></h1>
+        <p class="lede">MEKi screens</p>
+      </div>
+      <button id="theme" class="theme" type="button" hidden
+              aria-label="Switch between automatic, light and dark appearance">Theme</button>
+    </div>
+  </div>
+</header>
+<main>
+  <nav class="crumbs"><a href="index.html">Overview</a> &rsaquo; MEKi screens</nav>
+  <h2>MEKi screens</h2>
+  <p class="lede">MEK-inhibitor screens: base-editing Z-score against amino-acid position, one panel per gene, every condition on the same axes. Circles are ABE, diamonds CBE.</p>
+  <div class="filter">
+    <input id="filter" type="search" placeholder="Filter by gene or figure name"
+           aria-label="Filter figures">
+    <span class="hint">7 figures in 7 groups &middot; figures load when a group is opened</span>
+  </div>
+  <details class="group" open data-search="araf meki · all conditions">
+    <summary><span class="label">ARAF</span><span class="n">1 figure</span></summary>
+    <div class="body">
+      <figure class="figure">
+        <figcaption>
+          <span class="name">MEKi · all conditions</span>
+          <span class="note">21610 points</span>
+        </figcaption>
+        <iframe src="figures/scatterplots-meki/MEKi-ARAF.html" height="458" loading="lazy"
+                title="MEKi · all conditions"></iframe>
+      </figure>
+    </div>
+  </details>
+  <details class="group" data-search="braf meki · all conditions">
+    <summary><span class="label">BRAF</span><span class="n">1 figure</span></summary>
+    <div class="body">
+      <figure class="figure">
+        <figcaption>
+          <span class="name">MEKi · all conditions</span>
+          <span class="note">19410 points</span>
+        </figcaption>
+        <iframe src="figures/scatterplots-meki/MEKi-BRAF.html" height="458" loading="lazy"
+                title="MEKi · all conditions"></iframe>
+      </figure>
+    </div>
+  </details>
+  <details class="group" data-search="raf1 meki · all conditions">
+    <summary><span class="label">RAF1</span><span class="n">1 figure</span></summary>
+    <div class="body">
+      <figure class="figure">
+        <figcaption>
+          <span class="name">MEKi · all conditions</span>
+          <span class="note">17830 points</span>
+        </figcaption>
+        <iframe src="figures/scatterplots-meki/MEKi-RAF1.html" height="458" loading="lazy"
+                title="MEKi · all conditions"></iframe>
+      </figure>
+    </div>
+  </details>
+  <details class="group" data-search="ksr1 meki · all conditions">
+    <summary><span class="label">KSR1</span><span class="n">1 figure</span></summary>
+    <div class="body">
+      <figure class="figure">
+        <figcaption>
+          <span class="name">MEKi · all conditions</span>
+          <span class="note">32870 points</span>
+        </figcaption>
+        <iframe src="figures/scatterplots-meki/MEKi-KSR1.html" height="458" loading="lazy"
+                title="MEKi · all conditions"></iframe>
+      </figure>
+    </div>
+  </details>
+  <details class="group" data-search="ksr2 meki · all conditions">
+    <summary><span class="label">KSR2</span><span class="n">1 figure</span></summary>
+    <div class="body">
+      <figure class="figure">
+        <figcaption>
+          <span class="name">MEKi · all conditions</span>
+          <span class="note">31760 points</span>
+        </figcaption>
+        <iframe src="figures/scatterplots-meki/MEKi-KSR2.html" height="458" loading="lazy"
+                title="MEKi · all conditions"></iframe>
+      </figure>
+    </div>
+  </details>
+  <details class="group" data-search="map2k1 meki · all conditions">
+    <summary><span class="label">MAP2K1</span><span class="n">1 figure</span></summary>
+    <div class="body">
+      <figure class="figure">
+        <figcaption>
+          <span class="name">MEKi · all conditions</span>
+          <span class="note">12030 points</span>
+        </figcaption>
+        <iframe src="figures/scatterplots-meki/MEKi-MAP2K1.html" height="458" loading="lazy"
+                title="MEKi · all conditions"></iframe>
+      </figure>
+    </div>
+  </details>
+  <details class="group" data-search="map2k2 meki · all conditions">
+    <summary><span class="label">MAP2K2</span><span class="n">1 figure</span></summary>
+    <div class="body">
+      <figure class="figure">
+        <figcaption>
+          <span class="name">MEKi · all conditions</span>
+          <span class="note">14490 points</span>
+        </figcaption>
+        <iframe src="figures/scatterplots-meki/MEKi-MAP2K2.html" height="458" loading="lazy"
+                title="MEKi · all conditions"></iframe>
+      </figure>
+    </div>
+  </details>
+
+</main>
+<footer class="site">
+  <div class="inner">
+    <p>Interactive companion to the MAPK base-editing screen manuscript.
+       Figures generated with <a href="https://github.com/liaulab/be-scan">be_scan</a>
+       and Plotly. Built 2026-08-31.</p>
+    <p>Every figure is also available as a print-ready SVG in the repository
+       under <code>Outputs/</code>. Screen data is in
+       <code>TableS1-ScreenData.xlsx</code>.</p>
+  </div>
+</footer>
+<script>// Theme toggle, cycling auto -> light -> dark. The choice is remembered per
+// browser. Without JS the button stays hidden and the page follows the OS.
+(function () {
+  var button = document.getElementById('theme');
+  if (!button) return;
+  var order = ['auto', 'light', 'dark'];
+
+  function stored() {
+    try { return localStorage.getItem('mapk-theme') || 'auto'; } catch (e) { return 'auto'; }
+  }
+  function apply(mode) {
+    if (mode === 'auto') { delete document.documentElement.dataset.theme; }
+    else { document.documentElement.dataset.theme = mode; }
+    button.textContent = 'Theme: ' + mode;
+    try { localStorage.setItem('mapk-theme', mode); } catch (e) {}
+  }
+
+  button.hidden = false;
+  apply(stored());
+  button.addEventListener('click', function () {
+    apply(order[(order.indexOf(stored()) + 1) % order.length]);
+  });
+})();
+// Filters the group list. Without JS every group is still present and open-able.
+(function () {
+  var box = document.getElementById('filter');
+  if (!box) return;
+  var groups = Array.prototype.slice.call(document.querySelectorAll('details.group'));
+  box.addEventListener('input', function () {
+    var q = box.value.trim().toLowerCase();
+    groups.forEach(function (g) {
+      var hit = !q || g.dataset.search.indexOf(q) !== -1;
+      g.style.display = hit ? '' : 'none';
+      if (q && hit) { g.open = true; }
+    });
+  });
+})();
+</script>
+</body>
+</html>

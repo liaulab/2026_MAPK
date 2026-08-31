@@ -1,0 +1,630 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Per-gene boxplots</title>
+<link rel="stylesheet" href="assets/style.css">
+<script>(function(){try{var t=localStorage.getItem('mapk-theme');if(t==='light'||t==='dark'){document.documentElement.dataset.theme=t;}}catch(e){}})();</script>
+</head>
+<body>
+<header class="site">
+  <div class="inner">
+    <div class="masthead">
+      <div>
+        <h1><a href="index.html" style="text-decoration:none;color:inherit">MAPK base-editing screens</a></h1>
+        <p class="lede">Per-gene boxplots</p>
+      </div>
+      <button id="theme" class="theme" type="button" hidden
+              aria-label="Switch between automatic, light and dark appearance">Theme</button>
+    </div>
+  </div>
+</header>
+<main>
+  <nav class="crumbs"><a href="index.html">Overview</a> &rsaquo; Per-gene boxplots</nav>
+  <h2>Per-gene boxplots</h2>
+  <p class="lede">Z-score distribution of every guide targeting each gene, one panel per screen, editor and condition, with the non-targeting and essential-splice-site controls on the same axis. The last panel brackets the two-sided Mann-Whitney U test of controls against essential guides, within each editor.</p>
+  <div class="filter">
+    <input id="filter" type="search" placeholder="Filter by screen or figure name"
+           aria-label="Filter figures">
+    <span class="hint">64 figures in 7 groups &middot; figures load when a group is opened</span>
+  </div>
+  <details class="group" open data-search="gof abe dmso-day0-z shp2i-dmso-z krasi-dmso-z rafi-dmso-z trametinib-dmso-z erki-dmso-z shp2i-day0-z krasi-day0-z rafi-day0-z trametinib-day0-z erki-day0-z">
+    <summary><span class="label">GOF ABE</span><span class="n">11 figures</span></summary>
+    <div class="body">
+      <figure class="figure">
+        <figcaption>
+          <span class="name">DMSO-Day0-Z</span>
+          <span class="note">15656 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/GOF-ABE-DMSO-Day0-Z.html" height="323" loading="lazy"
+                title="DMSO-Day0-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">SHP2i-DMSO-Z</span>
+          <span class="note">15656 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/GOF-ABE-SHP2i-DMSO-Z.html" height="323" loading="lazy"
+                title="SHP2i-DMSO-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">KRASi-DMSO-Z</span>
+          <span class="note">15656 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/GOF-ABE-KRASi-DMSO-Z.html" height="323" loading="lazy"
+                title="KRASi-DMSO-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">RAFi-DMSO-Z</span>
+          <span class="note">15656 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/GOF-ABE-RAFi-DMSO-Z.html" height="323" loading="lazy"
+                title="RAFi-DMSO-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">Trametinib-DMSO-Z</span>
+          <span class="note">15656 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/GOF-ABE-Trametinib-DMSO-Z.html" height="323" loading="lazy"
+                title="Trametinib-DMSO-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">ERKi-DMSO-Z</span>
+          <span class="note">15656 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/GOF-ABE-ERKi-DMSO-Z.html" height="323" loading="lazy"
+                title="ERKi-DMSO-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">SHP2i-Day0-Z</span>
+          <span class="note">15656 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/GOF-ABE-SHP2i-Day0-Z.html" height="323" loading="lazy"
+                title="SHP2i-Day0-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">KRASi-Day0-Z</span>
+          <span class="note">15656 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/GOF-ABE-KRASi-Day0-Z.html" height="323" loading="lazy"
+                title="KRASi-Day0-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">RAFi-Day0-Z</span>
+          <span class="note">15656 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/GOF-ABE-RAFi-Day0-Z.html" height="323" loading="lazy"
+                title="RAFi-Day0-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">Trametinib-Day0-Z</span>
+          <span class="note">15656 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/GOF-ABE-Trametinib-Day0-Z.html" height="323" loading="lazy"
+                title="Trametinib-Day0-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">ERKi-Day0-Z</span>
+          <span class="note">15656 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/GOF-ABE-ERKi-Day0-Z.html" height="323" loading="lazy"
+                title="ERKi-Day0-Z"></iframe>
+      </figure>
+    </div>
+  </details>
+  <details class="group" data-search="gof cbe dmso-day0-z shp2i-dmso-z krasi-dmso-z rafi-dmso-z trametinib-dmso-z erki-dmso-z shp2i-day0-z krasi-day0-z rafi-day0-z trametinib-day0-z erki-day0-z">
+    <summary><span class="label">GOF CBE</span><span class="n">11 figures</span></summary>
+    <div class="body">
+      <figure class="figure">
+        <figcaption>
+          <span class="name">DMSO-Day0-Z</span>
+          <span class="note">15614 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/GOF-CBE-DMSO-Day0-Z.html" height="323" loading="lazy"
+                title="DMSO-Day0-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">SHP2i-DMSO-Z</span>
+          <span class="note">15614 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/GOF-CBE-SHP2i-DMSO-Z.html" height="323" loading="lazy"
+                title="SHP2i-DMSO-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">KRASi-DMSO-Z</span>
+          <span class="note">15614 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/GOF-CBE-KRASi-DMSO-Z.html" height="323" loading="lazy"
+                title="KRASi-DMSO-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">RAFi-DMSO-Z</span>
+          <span class="note">15614 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/GOF-CBE-RAFi-DMSO-Z.html" height="323" loading="lazy"
+                title="RAFi-DMSO-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">Trametinib-DMSO-Z</span>
+          <span class="note">15614 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/GOF-CBE-Trametinib-DMSO-Z.html" height="323" loading="lazy"
+                title="Trametinib-DMSO-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">ERKi-DMSO-Z</span>
+          <span class="note">15614 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/GOF-CBE-ERKi-DMSO-Z.html" height="323" loading="lazy"
+                title="ERKi-DMSO-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">SHP2i-Day0-Z</span>
+          <span class="note">15614 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/GOF-CBE-SHP2i-Day0-Z.html" height="323" loading="lazy"
+                title="SHP2i-Day0-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">KRASi-Day0-Z</span>
+          <span class="note">15614 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/GOF-CBE-KRASi-Day0-Z.html" height="323" loading="lazy"
+                title="KRASi-Day0-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">RAFi-Day0-Z</span>
+          <span class="note">15614 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/GOF-CBE-RAFi-Day0-Z.html" height="323" loading="lazy"
+                title="RAFi-Day0-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">Trametinib-Day0-Z</span>
+          <span class="note">15614 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/GOF-CBE-Trametinib-Day0-Z.html" height="323" loading="lazy"
+                title="Trametinib-Day0-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">ERKi-Day0-Z</span>
+          <span class="note">15614 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/GOF-CBE-ERKi-Day0-Z.html" height="323" loading="lazy"
+                title="ERKi-Day0-Z"></iframe>
+      </figure>
+    </div>
+  </details>
+  <details class="group" data-search="meki abe dmso-day0-z trametinib-dmso-z trametiglue-dmso-z gdc0623-dmso-z avutametinib-dmso-z selumetinib-dmso-z mirdametinib-dmso-z map855-dmso-z cobimetinib-dmso-z aps_adagrasib-dmso-z trametinib-day0-z trametiglue-day0-z gdc0623-day0-z avutametinib-day0-z selumetinib-day0-z mirdametinib-day0-z map855-day0-z cobimetinib-day0-z aps_adagrasib-day0-z">
+    <summary><span class="label">MEKi ABE</span><span class="n">19 figures</span></summary>
+    <div class="body">
+      <figure class="figure">
+        <figcaption>
+          <span class="name">DMSO-Day0-Z</span>
+          <span class="note">7775 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/MEKi-ABE-DMSO-Day0-Z.html" height="323" loading="lazy"
+                title="DMSO-Day0-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">Trametinib-DMSO-Z</span>
+          <span class="note">7775 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/MEKi-ABE-Trametinib-DMSO-Z.html" height="323" loading="lazy"
+                title="Trametinib-DMSO-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">Trametiglue-DMSO-Z</span>
+          <span class="note">7775 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/MEKi-ABE-Trametiglue-DMSO-Z.html" height="323" loading="lazy"
+                title="Trametiglue-DMSO-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">GDC0623-DMSO-Z</span>
+          <span class="note">7775 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/MEKi-ABE-GDC0623-DMSO-Z.html" height="323" loading="lazy"
+                title="GDC0623-DMSO-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">Avutametinib-DMSO-Z</span>
+          <span class="note">7775 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/MEKi-ABE-Avutametinib-DMSO-Z.html" height="323" loading="lazy"
+                title="Avutametinib-DMSO-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">Selumetinib-DMSO-Z</span>
+          <span class="note">7775 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/MEKi-ABE-Selumetinib-DMSO-Z.html" height="323" loading="lazy"
+                title="Selumetinib-DMSO-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">Mirdametinib-DMSO-Z</span>
+          <span class="note">7775 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/MEKi-ABE-Mirdametinib-DMSO-Z.html" height="323" loading="lazy"
+                title="Mirdametinib-DMSO-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">MAP855-DMSO-Z</span>
+          <span class="note">7775 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/MEKi-ABE-MAP855-DMSO-Z.html" height="323" loading="lazy"
+                title="MAP855-DMSO-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">Cobimetinib-DMSO-Z</span>
+          <span class="note">7775 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/MEKi-ABE-Cobimetinib-DMSO-Z.html" height="323" loading="lazy"
+                title="Cobimetinib-DMSO-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">APS_Adagrasib-DMSO-Z</span>
+          <span class="note">7775 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/MEKi-ABE-APS_Adagrasib-DMSO-Z.html" height="323" loading="lazy"
+                title="APS_Adagrasib-DMSO-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">Trametinib-Day0-Z</span>
+          <span class="note">7775 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/MEKi-ABE-Trametinib-Day0-Z.html" height="323" loading="lazy"
+                title="Trametinib-Day0-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">Trametiglue-Day0-Z</span>
+          <span class="note">7775 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/MEKi-ABE-Trametiglue-Day0-Z.html" height="323" loading="lazy"
+                title="Trametiglue-Day0-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">GDC0623-Day0-Z</span>
+          <span class="note">7775 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/MEKi-ABE-GDC0623-Day0-Z.html" height="323" loading="lazy"
+                title="GDC0623-Day0-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">Avutametinib-Day0-Z</span>
+          <span class="note">7775 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/MEKi-ABE-Avutametinib-Day0-Z.html" height="323" loading="lazy"
+                title="Avutametinib-Day0-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">Selumetinib-Day0-Z</span>
+          <span class="note">7775 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/MEKi-ABE-Selumetinib-Day0-Z.html" height="323" loading="lazy"
+                title="Selumetinib-Day0-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">Mirdametinib-Day0-Z</span>
+          <span class="note">7775 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/MEKi-ABE-Mirdametinib-Day0-Z.html" height="323" loading="lazy"
+                title="Mirdametinib-Day0-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">MAP855-Day0-Z</span>
+          <span class="note">7775 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/MEKi-ABE-MAP855-Day0-Z.html" height="323" loading="lazy"
+                title="MAP855-Day0-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">Cobimetinib-Day0-Z</span>
+          <span class="note">7775 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/MEKi-ABE-Cobimetinib-Day0-Z.html" height="323" loading="lazy"
+                title="Cobimetinib-Day0-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">APS_Adagrasib-Day0-Z</span>
+          <span class="note">7775 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/MEKi-ABE-APS_Adagrasib-Day0-Z.html" height="323" loading="lazy"
+                title="APS_Adagrasib-Day0-Z"></iframe>
+      </figure>
+    </div>
+  </details>
+  <details class="group" data-search="meki cbe dmso-day0-z trametinib-dmso-z trametiglue-dmso-z gdc0623-dmso-z avutametinib-dmso-z selumetinib-dmso-z mirdametinib-dmso-z map855-dmso-z cobimetinib-dmso-z aps_adagrasib-dmso-z trametinib-day0-z trametiglue-day0-z gdc0623-day0-z avutametinib-day0-z selumetinib-day0-z mirdametinib-day0-z map855-day0-z cobimetinib-day0-z aps_adagrasib-day0-z">
+    <summary><span class="label">MEKi CBE</span><span class="n">19 figures</span></summary>
+    <div class="body">
+      <figure class="figure">
+        <figcaption>
+          <span class="name">DMSO-Day0-Z</span>
+          <span class="note">7789 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/MEKi-CBE-DMSO-Day0-Z.html" height="323" loading="lazy"
+                title="DMSO-Day0-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">Trametinib-DMSO-Z</span>
+          <span class="note">7789 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/MEKi-CBE-Trametinib-DMSO-Z.html" height="323" loading="lazy"
+                title="Trametinib-DMSO-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">Trametiglue-DMSO-Z</span>
+          <span class="note">7789 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/MEKi-CBE-Trametiglue-DMSO-Z.html" height="323" loading="lazy"
+                title="Trametiglue-DMSO-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">GDC0623-DMSO-Z</span>
+          <span class="note">7789 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/MEKi-CBE-GDC0623-DMSO-Z.html" height="323" loading="lazy"
+                title="GDC0623-DMSO-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">Avutametinib-DMSO-Z</span>
+          <span class="note">7789 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/MEKi-CBE-Avutametinib-DMSO-Z.html" height="323" loading="lazy"
+                title="Avutametinib-DMSO-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">Selumetinib-DMSO-Z</span>
+          <span class="note">7789 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/MEKi-CBE-Selumetinib-DMSO-Z.html" height="323" loading="lazy"
+                title="Selumetinib-DMSO-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">Mirdametinib-DMSO-Z</span>
+          <span class="note">7789 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/MEKi-CBE-Mirdametinib-DMSO-Z.html" height="323" loading="lazy"
+                title="Mirdametinib-DMSO-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">MAP855-DMSO-Z</span>
+          <span class="note">7789 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/MEKi-CBE-MAP855-DMSO-Z.html" height="323" loading="lazy"
+                title="MAP855-DMSO-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">Cobimetinib-DMSO-Z</span>
+          <span class="note">7789 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/MEKi-CBE-Cobimetinib-DMSO-Z.html" height="323" loading="lazy"
+                title="Cobimetinib-DMSO-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">APS_Adagrasib-DMSO-Z</span>
+          <span class="note">7789 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/MEKi-CBE-APS_Adagrasib-DMSO-Z.html" height="323" loading="lazy"
+                title="APS_Adagrasib-DMSO-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">Trametinib-Day0-Z</span>
+          <span class="note">7789 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/MEKi-CBE-Trametinib-Day0-Z.html" height="323" loading="lazy"
+                title="Trametinib-Day0-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">Trametiglue-Day0-Z</span>
+          <span class="note">7789 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/MEKi-CBE-Trametiglue-Day0-Z.html" height="323" loading="lazy"
+                title="Trametiglue-Day0-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">GDC0623-Day0-Z</span>
+          <span class="note">7789 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/MEKi-CBE-GDC0623-Day0-Z.html" height="323" loading="lazy"
+                title="GDC0623-Day0-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">Avutametinib-Day0-Z</span>
+          <span class="note">7789 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/MEKi-CBE-Avutametinib-Day0-Z.html" height="323" loading="lazy"
+                title="Avutametinib-Day0-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">Selumetinib-Day0-Z</span>
+          <span class="note">7789 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/MEKi-CBE-Selumetinib-Day0-Z.html" height="323" loading="lazy"
+                title="Selumetinib-Day0-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">Mirdametinib-Day0-Z</span>
+          <span class="note">7789 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/MEKi-CBE-Mirdametinib-Day0-Z.html" height="323" loading="lazy"
+                title="Mirdametinib-Day0-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">MAP855-Day0-Z</span>
+          <span class="note">7789 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/MEKi-CBE-MAP855-Day0-Z.html" height="323" loading="lazy"
+                title="MAP855-Day0-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">Cobimetinib-Day0-Z</span>
+          <span class="note">7789 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/MEKi-CBE-Cobimetinib-Day0-Z.html" height="323" loading="lazy"
+                title="Cobimetinib-Day0-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">APS_Adagrasib-Day0-Z</span>
+          <span class="note">7789 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/MEKi-CBE-APS_Adagrasib-Day0-Z.html" height="323" loading="lazy"
+                title="APS_Adagrasib-Day0-Z"></iframe>
+      </figure>
+    </div>
+  </details>
+  <details class="group" data-search="lof abe dox-ut-z">
+    <summary><span class="label">LOF ABE</span><span class="n">1 figure</span></summary>
+    <div class="body">
+      <figure class="figure">
+        <figcaption>
+          <span class="name">Dox-UT-Z</span>
+          <span class="note">14484 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/LOF-ABE-Dox-UT-Z.html" height="323" loading="lazy"
+                title="Dox-UT-Z"></iframe>
+      </figure>
+    </div>
+  </details>
+  <details class="group" data-search="lof cbe dox-ut-z">
+    <summary><span class="label">LOF CBE</span><span class="n">1 figure</span></summary>
+    <div class="body">
+      <figure class="figure">
+        <figcaption>
+          <span class="name">Dox-UT-Z</span>
+          <span class="note">14439 guides</span>
+        </figcaption>
+        <iframe src="figures/boxplots/LOF-CBE-Dox-UT-Z.html" height="323" loading="lazy"
+                title="Dox-UT-Z"></iframe>
+      </figure>
+    </div>
+  </details>
+  <details class="group" data-search="controls versus essential gof, dmso-day0-z lof, ut-day0-z">
+    <summary><span class="label">Controls versus essential</span><span class="n">2 figures</span></summary>
+    <div class="body">
+      <figure class="figure">
+        <figcaption>
+          <span class="name">GOF, DMSO-Day0-Z</span>
+          <span class="note">ABE Control vs ABE Essential p = 4.78e-06; CBE Control vs CBE Essential p = 0.0059</span>
+        </figcaption>
+        <iframe src="figures/boxplots/GOF-DMSO-Day0-Z-controls.html" height="323" loading="lazy"
+                title="GOF, DMSO-Day0-Z"></iframe>
+      </figure>
+      <figure class="figure">
+        <figcaption>
+          <span class="name">LOF, UT-Day0-Z</span>
+          <span class="note">ABE Control vs ABE Essential p = 6.89e-10; CBE Control vs CBE Essential p = 4.46e-10</span>
+        </figcaption>
+        <iframe src="figures/boxplots/LOF-UT-Day0-Z-controls.html" height="323" loading="lazy"
+                title="LOF, UT-Day0-Z"></iframe>
+      </figure>
+    </div>
+  </details>
+
+</main>
+<footer class="site">
+  <div class="inner">
+    <p>Interactive companion to the MAPK base-editing screen manuscript.
+       Figures generated with <a href="https://github.com/liaulab/be-scan">be_scan</a>
+       and Plotly. Built 2026-08-31.</p>
+    <p>Every figure is also available as a print-ready SVG in the repository
+       under <code>Outputs/</code>. Screen data is in
+       <code>TableS1-ScreenData.xlsx</code>.</p>
+  </div>
+</footer>
+<script>// Theme toggle, cycling auto -> light -> dark. The choice is remembered per
+// browser. Without JS the button stays hidden and the page follows the OS.
+(function () {
+  var button = document.getElementById('theme');
+  if (!button) return;
+  var order = ['auto', 'light', 'dark'];
+
+  function stored() {
+    try { return localStorage.getItem('mapk-theme') || 'auto'; } catch (e) { return 'auto'; }
+  }
+  function apply(mode) {
+    if (mode === 'auto') { delete document.documentElement.dataset.theme; }
+    else { document.documentElement.dataset.theme = mode; }
+    button.textContent = 'Theme: ' + mode;
+    try { localStorage.setItem('mapk-theme', mode); } catch (e) {}
+  }
+
+  button.hidden = false;
+  apply(stored());
+  button.addEventListener('click', function () {
+    apply(order[(order.indexOf(stored()) + 1) % order.length]);
+  });
+})();
+// Filters the group list. Without JS every group is still present and open-able.
+(function () {
+  var box = document.getElementById('filter');
+  if (!box) return;
+  var groups = Array.prototype.slice.call(document.querySelectorAll('details.group'));
+  box.addEventListener('input', function () {
+    var q = box.value.trim().toLowerCase();
+    groups.forEach(function (g) {
+      var hit = !q || g.dataset.search.indexOf(q) !== -1;
+      g.style.display = hit ? '' : 'none';
+      if (q && hit) { g.open = true; }
+    });
+  });
+})();
+</script>
+</body>
+</html>

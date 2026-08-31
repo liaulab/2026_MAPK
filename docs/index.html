@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MAPK base-editing screens</title>
+<link rel="stylesheet" href="assets/style.css">
+<script>(function(){try{var t=localStorage.getItem('mapk-theme');if(t==='light'||t==='dark'){document.documentElement.dataset.theme=t;}}catch(e){}})();</script>
+</head>
+<body>
+<header class="site">
+  <div class="inner">
+    <div class="masthead">
+      <div>
+        <h1><a href="index.html" style="text-decoration:none;color:inherit">MAPK base-editing screens</a></h1>
+        <p class="lede">An interactive companion to the manuscript</p>
+      </div>
+      <button id="theme" class="theme" type="button" hidden
+              aria-label="Switch between automatic, light and dark appearance">Theme</button>
+    </div>
+  </div>
+</header>
+<main>
+  <h2>Explore the data</h2>
+  <p class="lede">244 figures across 11 analyses.</p>
+  <ul class="cards">
+    <li class="card">
+      <h3><a href="scatterplots-gof.html">GOF screens</a></h3>
+      <p>Resistance screens: base-editing Z-score against amino-acid position, one panel per gene, every inhibitor on the same axes. Circles are ABE, diamonds CBE.</p>
+      <span class="count">22 figures</span>
+    </li>
+    <li class="card">
+      <h3><a href="scatterplots-lof.html">LOF screens</a></h3>
+      <p>Dropout screens: base-editing Z-score against amino-acid position, one panel per gene. Circles are ABE, diamonds CBE.</p>
+      <span class="count">22 figures</span>
+    </li>
+    <li class="card">
+      <h3><a href="scatterplots-meki.html">MEKi screens</a></h3>
+      <p>MEK-inhibitor screens: base-editing Z-score against amino-acid position, one panel per gene, every condition on the same axes. Circles are ABE, diamonds CBE.</p>
+      <span class="count">7 figures</span>
+    </li>
+    <li class="card">
+      <h3><a href="pocket-pdb.html">Pocket hits — co-crystal structures</a></h3>
+      <p>Resistance hits classified as inside or outside the drug-binding pocket, using five inhibitor co-crystal structures.</p>
+      <span class="count">22 figures</span>
+    </li>
+    <li class="card">
+      <h3><a href="pocket-alphafold.html">Pocket hits — AlphaFold models</a></h3>
+      <p>The same analysis extended to every paralog, using AlphaFold models with the inhibitor aligned into the pocket.</p>
+      <span class="count">58 figures</span>
+    </li>
+    <li class="card">
+      <h3><a href="splice-heatmaps.html">Splice-guide validation heatmaps</a></h3>
+      <p>Mean Z-score per gene and condition for the essential-splice-site guides, i.e. the phenotype of ablating each node. Each panel is drawn across the whole pathway and across the RAF paralogs alone.</p>
+      <span class="count">10 figures</span>
+    </li>
+    <li class="card">
+      <h3><a href="boxplots.html">Per-gene boxplots</a></h3>
+      <p>Z-score distribution of every guide targeting each gene, one panel per screen, editor and condition, with the non-targeting and essential-splice-site controls on the same axis. The last panel brackets the two-sided Mann-Whitney U test of controls against essential guides, within each editor.</p>
+      <span class="count">64 figures</span>
+    </li>
+    <li class="card">
+      <h3><a href="sankey.html">Validated hits by inhibitor</a></h3>
+      <p>Where each inhibitor’s resistance hits fall in the pathway. Grey links are on-target, pink downstream, blue upstream.</p>
+      <span class="count">1 figure</span>
+    </li>
+    <li class="card">
+      <h3><a href="trajectory.html">GMM clustering and trajectory</a></h3>
+      <p>Guides clustered on their inhibitor-response profiles. Each clustered heatmap is blocked by cluster and carries a gene bar per guide; the validation screen additionally gets a minimum-spanning-tree pseudotime through the mixture components.</p>
+      <span class="count">13 figures</span>
+    </li>
+    <li class="card">
+      <h3><a href="lof-vs-dms.html">Hyperactivation versus deep mutational scanning</a></h3>
+      <p>Guides that hyperactivate the pathway, compared against published DMS data for PTPN11, KRAS and MAPK1.</p>
+      <span class="count">8 figures</span>
+    </li>
+    <li class="card">
+      <h3><a href="cbioportal.html">cBioPortal lollipops</a></h3>
+      <p>Pocket distance, validated screen hits and patient mutation counts on one position axis.</p>
+      <span class="count">17 figures</span>
+    </li>
+  </ul>
+  <h2>Screens</h2>
+  <table class="summary">
+    <thead><tr><th>Screen</th><th>Editor</th><th>Guides</th><th>Genes</th><th>Conditions</th></tr></thead>
+    <tbody>
+      <tr><td>gof</td><td>ABE</td><td class='num'>15,656</td><td class='num'>24</td><td class='num'>11</td></tr>
+      <tr><td>gof</td><td>CBE</td><td class='num'>15,614</td><td class='num'>24</td><td class='num'>11</td></tr>
+      <tr><td>lof</td><td>ABE</td><td class='num'>14,484</td><td class='num'>22</td><td class='num'>2</td></tr>
+      <tr><td>lof</td><td>CBE</td><td class='num'>14,439</td><td class='num'>22</td><td class='num'>2</td></tr>
+      <tr><td>meki</td><td>ABE</td><td class='num'>7,775</td><td class='num'>9</td><td class='num'>19</td></tr>
+      <tr><td>meki</td><td>CBE</td><td class='num'>7,789</td><td class='num'>9</td><td class='num'>19</td></tr>
+      <tr><td>valid</td><td>ABE</td><td class='num'>872</td><td class='num'>24</td><td class='num'>20</td></tr>
+      <tr><td>valid</td><td>CBE</td><td class='num'>731</td><td class='num'>24</td><td class='num'>11</td></tr>
+      <tr><td>lof_erk</td><td>ABE</td><td class='num'>358</td><td class='num'>3</td><td class='num'>2</td></tr>
+      <tr><td>lof_erk</td><td>CBE</td><td class='num'>369</td><td class='num'>2</td><td class='num'>2</td></tr>
+    </tbody>
+  </table>
+
+</main>
+<footer class="site">
+  <div class="inner">
+    <p>Interactive companion to the MAPK base-editing screen manuscript.
+       Figures generated with <a href="https://github.com/liaulab/be-scan">be_scan</a>
+       and Plotly. Built 2026-08-31.</p>
+    <p>Every figure is also available as a print-ready SVG in the repository
+       under <code>Outputs/</code>. Screen data is in
+       <code>TableS1-ScreenData.xlsx</code>.</p>
+  </div>
+</footer>
+<script>// Theme toggle, cycling auto -> light -> dark. The choice is remembered per
+// browser. Without JS the button stays hidden and the page follows the OS.
+(function () {
+  var button = document.getElementById('theme');
+  if (!button) return;
+  var order = ['auto', 'light', 'dark'];
+
+  function stored() {
+    try { return localStorage.getItem('mapk-theme') || 'auto'; } catch (e) { return 'auto'; }
+  }
+  function apply(mode) {
+    if (mode === 'auto') { delete document.documentElement.dataset.theme; }
+    else { document.documentElement.dataset.theme = mode; }
+    button.textContent = 'Theme: ' + mode;
+    try { localStorage.setItem('mapk-theme', mode); } catch (e) {}
+  }
+
+  button.hidden = false;
+  apply(stored());
+  button.addEventListener('click', function () {
+    apply(order[(order.indexOf(stored()) + 1) % order.length]);
+  });
+})();
+</script>
+</body>
+</html>
