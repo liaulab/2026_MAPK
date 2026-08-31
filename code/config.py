@@ -798,3 +798,170 @@ TRAJECTORY_MEKI_N_COMPONENTS = 10
 TRAJECTORY_MEKI_ROOT = 3
 
 RANDOM_STATE = 0
+
+# ---------------------------------------------------------------------------
+# LIBRARY DESIGN
+# ---------------------------------------------------------------------------
+#
+# MAPK_Library_Design.ipynb designs the tiling ABE/CBE library the screens use.
+# It is upstream of everything else in this repository: TableS1 reports on the
+# guides this pipeline produces.
+
+# The workbook a run reads. Built by `python -m code.build_inputs` from the
+# raw files below, which stay in place as the provenance of what it contains -
+# the same arrangement as TableS3/S4/S5 and `Inputs/`.
+LIBRARY_DESIGN_XLSX = REPO_ROOT / "TableS6-LibraryDesign.xlsx"
+
+# Summary sheet, first in the workbook; every other sheet is data.
+LIB_BASE_EDITOR_SHEET = "BaseEditors"
+LIB_TRANSCRIPT_SHEET = "Transcripts"
+LIB_BEHIVE_SHEET = "BEhive"
+LIB_FLASHFRY_SHEET = "FlashFry"
+LIB_EXON_SHEET = "Exons"
+# The two design sheets are named for their base editor; see LIB_ABE_NAME below.
+
+# RAW INPUTS
+#
+# Read by `build_inputs` alone, to build the workbook above, with one
+# exception: step 2 runs the design script against ClinVar and the Ensembl
+# REST API directly, because regenerating designs is not a build step.
+LIBRARY_DESIGN_DIR = REPO_ROOT / "library_design_JW"
+LIB_INPUTS_DIR = LIBRARY_DESIGN_DIR / "inputs"
+
+LIB_GENE_SELECTION_DIR = LIB_INPUTS_DIR / "gene_selection"
+LIB_DESIGN_SCRIPTS_DIR = LIB_INPUTS_DIR / "design_scripts"
+LIB_SGRNA_DESIGNS_DIR = LIB_INPUTS_DIR / "sgrna_designs"
+LIB_BEHIVE_DIR = LIB_INPUTS_DIR / "behive"
+LIB_FLASHFRY_DIR = LIB_INPUTS_DIR / "flashfry"
+
+LIB_INITIAL_GENE_LIST = LIB_GENE_SELECTION_DIR / "Initial_gene_list.csv"
+LIB_MANE_SUMMARY = LIB_GENE_SELECTION_DIR / "MANE.GRCh38.v1.0.summary_2022.04.11.download.txt"
+
+# Third-party design script (Broad Institute; author Mudra Hegde) and the
+# base-editor parameter table it reads. Local modifications are documented in
+# inputs/design_scripts/PATCHES.md.
+LIB_DESIGN_SCRIPT = LIB_DESIGN_SCRIPTS_DIR / "base_editing_guide_designs.py"
+LIB_BE_PARAMETERS = LIB_DESIGN_SCRIPTS_DIR / "BEs_to_use.txt"
+# ClinVar clinical-significance annotations, 3.9 GB. Read only when step 2
+# regenerates designs, so it is not in the workbook. Not supplied either; the
+# step prints the download command when it is missing.
+LIB_CLINVAR_SUMMARY = LIB_DESIGN_SCRIPTS_DIR / "variant_summary.txt"
+
+LIB_BEHIVE_PRECOMPUTED = LIB_BEHIVE_DIR / "precomputed_BEhive_scores.csv"
+LIB_EXON_FASTA = LIB_BEHIVE_DIR / "MAPK_genes_exons.fasta"
+LIB_FLASHFRY_PRECOMPUTED = LIB_FLASHFRY_DIR / "precomputed_flashfry_scored.txt"
+LIB_FLASHFRY_SCRIPTS = ["250203_FlashFry_discover.sh", "250203_FlashFry_score.sh"]
+
+OUT_LIBRARY_DESIGN = OUTPUTS_DIR / "12-Library-Design"
+
+LIBRARY_DESIGN_OUTPUT_DIRS = [OUT_LIBRARY_DESIGN]
+
+
+def make_library_design_dirs() -> None:
+    """Create the library-design output directory. Safe to call repeatedly."""
+    for directory in LIBRARY_DESIGN_OUTPUT_DIRS:
+        directory.mkdir(parents=True, exist_ok=True)
+
+
+# Base editors the library is designed for.
+#   SpG-ABE8e  A->G, NG PAM, editing window 4-8
+#   SpG-BE3.9  C->T, NG PAM, editing window 4-8
+LIB_ABE_NAME = "SpG-ABE8e"
+LIB_CBE_NAME = "SpG-BE3.9"
+
+# Ensembl REST endpoint used when step 2 regenerates designs.
+#
+# Archive endpoints are pinned to a single release; rest.ensembl.org always
+# serves the current one. Release 110 was current when the published library
+# was designed, so this pin makes regeneration reproduce those designs.
+#
+#   https://jul2023.rest.ensembl.org   release 110  (used here)
+#   https://jan2024.rest.ensembl.org   release 111
+#   https://rest.ensembl.org           current release, whatever it is
+#
+# Do not use grch37.rest.ensembl.org: it serves GRCh37, and this library is
+# designed against GRCh38.
+LIB_ENSEMBL_SERVER = "https://jul2023.rest.ensembl.org"
+
+# Guides are dropped when either editor's amino-acid annotation matches. The
+# patterns are matched against the design script's annotation strings.
+LIB_FILTERS = [
+    ("Met1[a-zA-Z]", "start-codon edits"),
+    ("Ter", "stop-codon edits"),
+    ("Exon", "intronic-only edits"),
+    ("utr", "UTR-only edits"),
+]
+
+# BEhive scores the 50 bp of genomic context centred on the protospacer:
+# 20 nt upstream + the 20 nt guide + 10 nt downstream.
+LIB_BEHIVE_CONTEXT = (20, 30)
+# mES is the authors' recommendation where the cell line of interest is not in
+# their training data.
+LIB_BEHIVE_CELLTYPE = "mES"
+LIB_BEHIVE_MODELS = [("BE4", "BEhive_CBE"), ("ABE8", "BEhive_ABE")]
+# BEhive's pickled models reference sklearn.ensemble.gradient_boosting, removed
+# in scikit-learn 0.22, so only this version can load them.
+LIB_BEHIVE_SKLEARN_VERSION = "0.20.3"
+
+# FlashFry reports several off-target metrics; Hsu2013 is the aggregate
+# specificity score retained here, higher meaning fewer and poorer matches.
+LIB_SPECIFICITY_COLUMN = "Hsu2013"
+
+# What the published library contains. The verification step compares a run
+# against these; a run on the supplied inputs that differs is a failure.
+LIB_PUBLISHED_COUNTS = {
+    "guides in final library": 15406,
+    "genes targeted": 22,
+    "rows in per-gene stats": 22,
+    "guides with a BEhive CBE score": 15406,
+    "guides with a BEhive ABE score": 15406,
+    "guides with a Hsu2013 score": 15380,
+}
+
+# ---------------------------------------------------------------------------
+# OTHER FIGURES
+# ---------------------------------------------------------------------------
+#
+# MAPK_Other_Figures.ipynb draws the manuscript figures that are not screen
+# figures: competitive growth, CellTiter-Glo, dose-response, BaF3 growth and
+# the published KRAS DMS meta-analysis. Every one reads a single tidy workbook.
+
+# Already one tidy tab per experiment when it reaches the repository, so unlike
+# the other workbooks there is nothing for `build_inputs` to consolidate: it is
+# a source workbook in its own right, as TableS1 is.
+OTHER_FIGURES_XLSX = REPO_ROOT / "TableS7-OtherFiguresData.xlsx"
+
+OTHER_FIGURES_DIR = REPO_ROOT / "Other_figures_JW"
+
+OUT_OTHER_FIGURES = OUTPUTS_DIR / "13-Other-Figures"
+
+OTHER_FIGURE_OUTPUT_DIRS = [OUT_OTHER_FIGURES]
+
+
+def make_other_figure_dirs() -> None:
+    """Create the other-figures output directory. Safe to call repeatedly."""
+    for directory in OTHER_FIGURE_OUTPUT_DIRS:
+        directory.mkdir(parents=True, exist_ok=True)
+
+
+# 6 pt Arial with editable text in the PDF, matching the print figures the
+# screen notebook writes.
+OTHER_FIG_RCPARAMS = {
+    "font.family": "Arial", "font.size": 6,
+    "axes.titlesize": 6, "axes.labelsize": 6,
+    "xtick.labelsize": 6, "ytick.labelsize": 6, "legend.fontsize": 6,
+    "pdf.fonttype": 42, "ps.fonttype": 42,
+}
+
+# Shared palette, used across panels of different assays.
+OTHER_FIG_COLORS = {
+    "grey": "#BCBEC0",
+    "dark_grey": "#606161",
+    "green": "#B3CFBC",
+    "blue": "#7794C1",
+    "purple": "#9486AA",
+    "red": "#E08C8F",
+}
+
+# Point jitter in the DMS boxplots is random; the seed keeps the figure stable.
+OTHER_FIG_JITTER_SEED = 0

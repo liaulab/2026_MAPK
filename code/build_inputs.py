@@ -1,16 +1,21 @@
-"""Build the three consolidated Excel inputs from the raw files under ``Inputs/``.
+"""Build the consolidated Excel inputs from the raw files they came from.
 
-The analysis reads three workbooks in the repository root rather than the
-directory trees they were built from:
+Every notebook reads workbooks in the repository root rather than the directory
+trees they were built from:
 
-``Inputs-cBioPortal.xlsx``       one sheet per gene, plus a transcript summary
-``Inputs-PocketDistances.xlsx``  one sheet per structure, plus a summary
-``Inputs-DMS.xlsx``              one sheet, all three DMS datasets stacked
+``TableS3-cBioPortal-Annotations.xlsx``       one sheet per gene, plus a summary
+``TableS5-PocketDistances-Annotations.xlsx``  one sheet per structure, plus a summary
+``TableS4-DMS-Annotations.xlsx``              one sheet, all three DMS datasets stacked
+``TableS6-LibraryDesign.xlsx``                the sgRNA library design inputs
 
-Consolidating them means a reviewer downloads three files instead of sixty, and
-the expensive step — parsing eighteen mmCIF files with Biopython to measure
-every residue's distance to its ligand — runs once here rather than on every
-notebook execution. Nothing in the pipeline reads ``Inputs/`` any more.
+Consolidating them means a reviewer downloads a handful of files instead of
+sixty, and the expensive steps — parsing eighteen mmCIF files with Biopython to
+measure every residue's distance to its ligand, reading four large design and
+score tables — run once here rather than on every notebook execution. Nothing
+in the pipeline reads ``Inputs/`` or ``library_design_JW/inputs/`` any more.
+
+Two root workbooks are not built here because they arrive already consolidated:
+``TableS1-ScreenData.xlsx`` and ``TableS7-OtherFiguresData.xlsx``.
 
 This module is the only place the raw formats are understood. It is a build
 step, not part of a run: execute it when a raw input changes.
@@ -26,6 +31,7 @@ from __future__ import annotations
 import re
 
 import pandas as pd
+from Bio import SeqIO
 
 from . import config as cfg
 from . import structures as struct
@@ -213,14 +219,102 @@ def build_dms(path=None) -> pd.DataFrame:
 
 
 # ---------------------------------------------------------------------------
+# LIBRARY DESIGN
+# ---------------------------------------------------------------------------
+
+
+def read_mane_transcripts() -> pd.DataFrame:
+    """The target genes mapped to their MANE Select transcripts.
+
+    Restricting the MANE v1.0 summary to ``MANE Select`` yields exactly one
+    transcript per gene. The version suffix is dropped
+    (ENST00000644974.5 -> ENST00000644974) because that is the form the design
+    script expects.
+
+    Only the 22 target genes are kept. The other 19,040 MANE Select rows are
+    not part of this manuscript, and the pipeline used them only as a lookup.
+    """
+    mane = pd.read_table(cfg.LIB_MANE_SUMMARY)
+    mane = mane[mane['MANE_status'] == 'MANE Select']
+
+    gene_info = mane[['symbol', 'name', 'Ensembl_nuc', 'RefSeq_nuc']].copy()
+    gene_info.columns = ['Gene', 'name', 'Ensembl_nuc', 'RefSeq_nuc']
+    gene_info['Ensembl_nuc'] = [re.match(r'ENST\d+', x).group(0)
+                                for x in gene_info['Ensembl_nuc']]
+
+    targets = pd.read_csv(cfg.LIB_INITIAL_GENE_LIST)
+    transcripts = targets.merge(gene_info, 'left', on='Gene')
+    assert transcripts['Ensembl_nuc'].notna().all(), \
+        'some genes did not map to a MANE transcript'
+    return transcripts
+
+
+def read_exon_records() -> pd.DataFrame:
+    """The UCSC exon FASTA as one row per record.
+
+    Record IDs look like ``hg38_ncbiRefSeq_NM_001654.5_3``; the RefSeq
+    accession is parsed back out when BEhive looks a guide's context up, so it
+    is stored here rather than the parsed form. Only the forward strand is
+    stored - the reverse complement is derived at read time.
+    """
+    records = [{'Record': record.id, 'Sequence': str(record.seq)}
+               for record in SeqIO.parse(str(cfg.LIB_EXON_FASTA), 'fasta')]
+    return pd.DataFrame(records)
+
+
+def build_library_design(path=None) -> pd.DataFrame:
+    """Write the library-design workbook; return the base-editor summary sheet.
+
+    Sheets, in order: the two base editors and their design parameters, the
+    target-gene transcript mapping, one design table per base editor, the
+    precomputed BEhive efficiency scores, the FlashFry specificity scores, and
+    the exon sequences BEhive reads a guide's genomic context from.
+
+    ClinVar's ``variant_summary.txt`` is deliberately absent: it is 3.9 GB, it
+    is only read when step 2 regenerates designs, and the designs it annotated
+    are stored here already.
+    """
+    path = path or cfg.LIBRARY_DESIGN_XLSX
+
+    base_editors = pd.read_table(cfg.LIB_BE_PARAMETERS)
+    transcripts = read_mane_transcripts()
+    exons = read_exon_records()
+
+    designs = {be: pd.read_table(cfg.LIB_SGRNA_DESIGNS_DIR /
+                                 f'sgrna_designs_MAPK_{be}.txt')
+               for be in (cfg.LIB_ABE_NAME, cfg.LIB_CBE_NAME)}
+
+    # Written with an index and read back with index_col=0, so the CSV carries
+    # a second, nameless index column. It holds nothing.
+    behive = pd.read_csv(cfg.LIB_BEHIVE_PRECOMPUTED, index_col=0)
+    behive = behive.drop(columns=[c for c in behive.columns
+                                  if c.startswith('Unnamed:')])
+    flashfry = pd.read_table(cfg.LIB_FLASHFRY_PRECOMPUTED)
+
+    summary = base_editors.assign(
+        **{'Designed guides': [len(designs[be]) for be in base_editors['BEs']]})
+
+    with pd.ExcelWriter(path, **_WRITER_KWARGS) as writer:
+        summary.to_excel(writer, sheet_name=cfg.LIB_BASE_EDITOR_SHEET, index=False)
+        transcripts.to_excel(writer, sheet_name=cfg.LIB_TRANSCRIPT_SHEET, index=False)
+        for be, table in designs.items():
+            table.to_excel(writer, sheet_name=be, index=False)
+        behive.to_excel(writer, sheet_name=cfg.LIB_BEHIVE_SHEET, index=False)
+        flashfry.to_excel(writer, sheet_name=cfg.LIB_FLASHFRY_SHEET, index=False)
+        exons.to_excel(writer, sheet_name=cfg.LIB_EXON_SHEET, index=False)
+    return summary
+
+
+# ---------------------------------------------------------------------------
 
 
 def build_all() -> dict[str, pd.DataFrame]:
-    """Rebuild all three workbooks."""
+    """Rebuild every workbook that is built from raw files."""
     return {
         'cBioPortal': build_cbioportal(),
         'PocketDistances': build_pocket_distances(),
         'DMS': build_dms(),
+        'LibraryDesign': build_library_design(),
     }
 
 
