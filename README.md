@@ -21,6 +21,8 @@ Section 0 needs this repository present. Either set `REPO_URL` in that cell to c
 
 Then run the notebook top to bottom.
 
+**Install time:** a few minutes on a cold Colab runtime.
+
 ### Locally
 
 ```bash
@@ -57,6 +59,65 @@ In `MAPK_Analysis.ipynb` and `MAPK_Other.ipynb` those later sections are indepen
 | `TableS5-PocketDistances-Annotations.xlsx` | 19 | Minimum heavy-atom distance from the inhibitor to every residue with one sheet per structure plus a `Structures` summary |
 | `TableS6-LibraryDesign.xlsx` | 7 | Everything the library design needs: base-editor parameters, target-gene transcripts, one sgRNA design table per editor, BEhive efficiency scores, FlashFry specificity scores, exon sequences |
 | `TableS7-OtherFiguresData.xlsx` | 16 | One tidy tab per non-screen experiment plus the competitive-growth label keys |
+
+---
+
+## Expected output
+
+`MAPK_Analysis.ipynb` writes **962 files** (878 SVG, 83 CSV, 1 HTML) to `Outputs/00-Summaries/` through `Outputs/11-Boxplots/`. The other two notebooks add 37 more, for **999 files, 343 MB** in total:
+
+| Directory | Files | Size | Written by |
+|---|---:|---:|---|
+| `00-Summaries/` | 23 | 200 KB |
+| `01-Scatterplots/` | 408 | 267 MB |
+| `02-Scatterplots-Combined/` | 52 | 44 MB |
+| `03-GOF-vs-Validation/` | 8 | 1.2 MB |
+| `04-Pocket-Hits-PDB/` | 73 | 520 KB |
+| `05-Pocket-Hits-AlphaFold/` | 178 | 1.3 MB |
+| `06-Splice-Validation-Heatmaps/` | 20 | 340 KB |
+| `07-Sankey/` | 2 | 4.7 MB |
+| `08-GMM-Trajectory/` | 44 | 5.1 MB |
+| `09-LOF-vs-DMS/` | 33 | 4.9 MB |
+| `10-cBioPortal-Lollipops/` | 56 | 1.9 MB |
+| `11-Boxplots/` | 64 | 1.8 MB |
+| `12-Library-Design/` | 10 | 10 MB |
+| `13-Other-Figures/` | 27 | 784 KB |
+
+### Expected runtime
+
+Measured on the machine above: 
+
+| Notebook | First run |
+|---|---:|
+| `MAPK_Analysis.ipynb` | < 5 mins |
+| `MAPK_LibraryDesign.ipynb` | < 5 mins |
+| `MAPK_Other.ipynb` | < 5 mins |
+
+---
+
+## Running the analysis
+
+To reproduce the manuscript figures, run in any order:
+
+1. **`MAPK_Analysis.ipynb`** — run top to bottom. Sections 4 onward are independent of one another and can be run selectively once sections 0–3 have run.
+2. **`MAPK_LibraryDesign.ipynb`** — run top to bottom, in order. Leave `RUN_HEAVY_STEPS = False` (the default).
+3. **`MAPK_Other.ipynb`** — run top to bottom.
+4. **`MAPK_Interactive_Analysis.ipynb`** — optional, for the `docs/` site.
+
+Headless, without opening Jupyter:
+
+```bash
+conda activate mapk-analysis
+jupyter nbconvert --to notebook --execute --inplace MAPK_Analysis.ipynb
+```
+
+### Library design: the heavy steps
+
+Three steps of the library design need resources the rest of the pipeline does not: 
+1. sgRNA design needs a live Ensembl endpoint and a 3.9 GB ClinVar dump and takes about an hour
+2. BEhive needs a pinned Python 3.7 environment with `scikit-learn==0.20.3`
+3. FlashFry needs a multi-gigabyte off-target database.
+The results of all three are cached in `TableS6-LibraryDesign.xlsx`, so with `RUN_HEAVY_STEPS = False` the notebook reproduces the published library from cache in seconds. Set it to `True` only to regenerate them.
 
 ---
 
@@ -108,6 +169,44 @@ Everything used by more than one figure lives in **`code/config.py`**, once, and
 | GMM trajectory | Conditions, component counts, roots and cluster subsets for both trajectories |
 | Library design | Base editors, the Ensembl endpoint, guide filters and the published counts a run is checked against |
 | Other figures | The shared figure style, palette and jitter seed |
+
+---
+
+## System requirements
+
+### Operating systems
+
+| Platform | Version | Status |
+|---|---|---|
+| macOS | 13.5.2 (Darwin 22.6.0), Apple silicon (arm64) | Tested |
+| Linux | Google Colab CPU runtime | Tested |
+| Windows | — | Not tested but the conda environment is expected to work |
+
+### Hardware
+
+Analysis was run on a standard laptop with 10 cores and 16 GB of RAM, but the analysis is single-threaded and peaks at 0.8 GB resident, so 4 GB is ample. 
+About 450 MB of free disk space is needed for a full run plus 950 MB for the conda environment.
+
+### Software dependencies
+
+Python 3.12, as pinned by `environment.yml`, plus:
+
+| Package | Required |
+|---|---|---|
+| numpy | ≥ 1.26 |
+| pandas | ≥ 2.0 |
+| scipy | ≥ 1.11 |
+| matplotlib | ≥ 3.8 |
+| seaborn | ≥ 0.13 |
+| scikit-learn | ≥ 1.3 |
+| openpyxl | ≥ 3.1 |
+| biopython | ≥ 1.81 |
+| biopandas | ≥ 0.5 |
+| statsmodels | ≥ 0.14 |
+| plotly | ≥ 5.24 |
+| kaleido | ≥ 0.2.1 |
+| jupyterlab, ipykernel |
+| be_scan | 3.0.0 |
 
 ---
 
